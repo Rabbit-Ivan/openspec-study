@@ -1,0 +1,46 @@
+{
+  "commands": {
+    "/opsx:new": {
+      "chineseName": "新",
+      "description": "创建一个新的变更目录，开始规划你的功能"
+    },
+    "/opsx:continue": {
+      "chineseName": "续",
+      "description": "每次只生成一个文档，可以逐步审核，适合重要功能"
+    },
+    "/opsx:ff": {
+      "chineseName": "快进",
+      "description": "一口气生成所有文档（proposal → specs → design → tasks），适合中小功能"
+    },
+    "/opsx:apply": {
+      "chineseName": "用",
+      "description": "执行 tasks.md 中的任务，开始写代码"
+    },
+    "/opsx:verify": {
+      "chineseName": "验",
+      "description": "三维度验证：完整性、正确性、一致性，确保实现符合规格"
+    },
+    "/opsx:sync": {
+      "chineseName": "同",
+      "description": "把变更的 spec 合并到主 specs 目录（archive 时会自动提示）"
+    },
+    "/opsx:archive": {
+      "chineseName": "档",
+      "description": "完成后归档，保存到 archive 目录"
+    },
+    "/opsx:bulk-archive": {
+      "chineseName": "批档",
+      "description": "一次归档多个已完成的变更，自动检测 spec 冲突并解决"
+    },
+    "/opsx:explore": {
+      "chineseName": "探",
+      "description": "只思考不写文件，用于前期调研和方案比较"
+    },
+    "/opsx:onboard": {
+      "chineseName": "学",
+      "description": "交互式引导教程，用真实代码库走一遍完整工作流"
+    }
+  },
+  "tools": {},
+  "meta": {}
+}
