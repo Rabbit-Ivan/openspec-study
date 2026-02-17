@@ -16,21 +16,27 @@ export const HERO = {
 export const WORKFLOW_DEMOS = {
     fast: {
         title: '⚡ 快速模式',
-        description: '总共 <strong style="color: var(--jade-glow);">3 个命令</strong>，和旧版体验一致',
+        description: '官方推荐链路：<strong style="color: var(--jade-glow);">new → ff → apply → verify → archive</strong>',
         lines: [
-            { type: 'comment', text: '# 第一步：创建 + 快进生成所有文档' },
+            { type: 'comment', text: '# 第一步：创建变更' },
+            { type: 'input', text: '/opsx:new add-product-favorites' },
+            { type: 'success', text: '✓ 已创建 openspec/changes/add-product-favorites/' },
+            { type: 'blank' },
+            { type: 'comment', text: '# 第二步：快进生成规划文档' },
             { type: 'input', text: '/opsx:ff' },
-            { type: 'output', text: 'AI：你想做什么功能？' },
-            { type: 'input-text', text: '我想给产品添加收藏功能' },
             { type: 'success', text: '✓ 已生成 proposal.md, specs/, design.md, tasks.md' },
             { type: 'blank' },
-            { type: 'comment', text: '# 第二步：执行任务' },
+            { type: 'comment', text: '# 第三步：执行任务' },
             { type: 'input', text: '/opsx:apply' },
             { type: 'success', text: '✓ 开始执行 tasks.md 中的任务...' },
             { type: 'blank' },
-            { type: 'comment', text: '# 第三步：归档' },
+            { type: 'comment', text: '# 第四步：验证实现与规格一致' },
+            { type: 'input', text: '/opsx:verify' },
+            { type: 'success', text: '✓ 验证完成：0 critical，1 warning' },
+            { type: 'blank' },
+            { type: 'comment', text: '# 第五步：归档（如有需要会提示 sync）' },
             { type: 'input', text: '/opsx:archive' },
-            { type: 'success', text: '✓ 已归档到 archive/' },
+            { type: 'success', text: '✓ 已同步 specs 并归档到 archive/' },
         ],
     },
     detailed: {
@@ -100,10 +106,18 @@ export const SCENARIO = {
     subtitle: '用户可以收藏喜欢的珠宝产品，在个人中心查看',
     steps: [
         {
-            command: '/opsx:ff',
-            desc: '告诉 AI 你想做什么功能',
+            command: '/opsx:new',
+            desc: '先创建变更并命名，进入标准工作流',
             results: [
-                '✓ 自动创建变更目录',
+                '✓ 已创建 openspec/changes/product-favorites/',
+                '✓ 选择 schema：spec-driven',
+                '✓ 下一步可用：/opsx:continue 或 /opsx:ff',
+            ],
+        },
+        {
+            command: '/opsx:ff',
+            desc: '一口气生成 proposal/specs/design/tasks',
+            results: [
                 '✓ 生成 proposal.md（为什么做）',
                 '✓ 生成 specs/favorites/spec.md（行为规格）',
                 '✓ 生成 design.md（技术方案）',
@@ -123,9 +137,19 @@ export const SCENARIO = {
             ],
         },
         {
-            command: '/opsx:archive',
-            desc: '功能完成，归档到 archive 目录',
+            command: '/opsx:verify',
+            desc: '归档前核对完整性、正确性、一致性',
             results: [
+                '✓ Completeness：任务与需求都已覆盖',
+                '✓ Correctness：关键场景行为符合规格',
+                '✓ Coherence：设计决策已体现在代码中',
+            ],
+        },
+        {
+            command: '/opsx:archive',
+            desc: '功能完成后归档，必要时先提示同步 specs',
+            results: [
+                '✓ 检测到 delta specs 未同步，已提示是否 sync',
                 '✓ 已归档到 openspec/changes/archive/2025-02-01-product-favorites/',
             ],
         },
@@ -206,12 +230,12 @@ export const REFERENCE_TABLE_HEADERS = {
 
 // Reference table usage scenario mapping
 export const COMMAND_USAGE_SCENARIOS: Record<string, string> = {
-    '/opsx:ff': '日常开发首选',
+    '/opsx:ff': 'new 后快速推进',
     '/opsx:new': '需要逐步审核时',
     '/opsx:continue': '配合 new 使用',
     '/opsx:apply': '开始写代码',
     '/opsx:verify': '归档前检查（推荐）',
-    '/opsx:archive': '收尾必用',
+    '/opsx:archive': '收尾必用（会提示 sync）',
     '/opsx:explore': '不确定要不要做时',
     '/opsx:sync': 'archive 会自动提示',
     '/opsx:bulk-archive': '并行开发收尾',

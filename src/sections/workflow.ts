@@ -1,6 +1,7 @@
 // Workflow section renderer
 
 import { SECTION_LABELS, MANTRA, WORKFLOW_DEMOS } from '../data/custom'
+import type { UpstreamData } from '../types'
 
 interface TerminalLine {
     type: string
@@ -52,13 +53,40 @@ function renderTerminal(lines: TerminalLine[]): string {
   `
 }
 
-export function renderWorkflow(container: HTMLElement) {
+function renderFlowChips(title: string, commands: string[]): string {
+    if (commands.length === 0) return ''
+
+    return `
+      <div style="margin-top: 1rem;">
+        <div style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.4rem;">${title}</div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem;">
+          ${commands.map((cmd, i) => `
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; padding: 0.2rem 0.55rem; border-radius: 999px; background: rgba(243,156,18,0.12); border: 1px solid rgba(243,156,18,0.25); color: var(--gold-glow);">${cmd}</span>
+            ${i < commands.length - 1 ? '<span style="color: var(--text-muted);">→</span>' : ''}
+          `).join('')}
+        </div>
+      </div>
+    `
+}
+
+export function renderWorkflow(container: HTMLElement, upstream: UpstreamData) {
     const modes = ['fast', 'detailed', 'parallel'] as const
+    const quickFeatureFlow = upstream.workflowHighlights.quickFeature.length
+        ? upstream.workflowHighlights.quickFeature
+        : ['/opsx:new', '/opsx:ff', '/opsx:apply', '/opsx:verify', '/opsx:archive']
+    const completionFlow = upstream.workflowHighlights.completion.length
+        ? upstream.workflowHighlights.completion
+        : ['/opsx:apply', '/opsx:verify', '/opsx:archive']
 
     container.innerHTML = `
     <div class="section-label">${SECTION_LABELS.workflow}</div>
     <h2 class="section-title">${SECTION_LABELS.workflowTitle}</h2>
     <p class="section-desc">${SECTION_LABELS.workflowDesc}</p>
+    <div style="margin: 1.2rem 0 1.6rem; padding: 1rem 1.2rem; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(243,156,18,0.2);">
+      <div style="font-size: 0.95rem; color: var(--gold-glow);">官方推荐链路（自动同步）</div>
+      ${renderFlowChips('Quick Feature', quickFeatureFlow)}
+      ${renderFlowChips('Completing a Change', completionFlow)}
+    </div>
 
     <div class="flow-diagram">
       <div class="flow-step">

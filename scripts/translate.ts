@@ -64,8 +64,12 @@ export async function computeTranslations(
     // Translate command purposes
     for (const cmd of upstream.commands) {
         const existingEntry = existing.commands[cmd.name]
-        if (existingEntry && existingEntry.description) {
-            // Already translated, skip
+        if (
+            existingEntry
+            && existingEntry.description
+            && existingEntry.source === cmd.purpose
+        ) {
+            // Already translated and source text unchanged, skip
             continue
         }
         console.log(`  Translating command: ${cmd.name}`)
@@ -73,6 +77,7 @@ export async function computeTranslations(
         result.commands[cmd.name] = {
             chineseName: existingEntry?.chineseName || cmd.name.replace('/opsx:', ''),
             description: desc,
+            source: cmd.purpose,
         }
         translated++
     }

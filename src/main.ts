@@ -29,7 +29,7 @@ function renderApp() {
 
     if (hero) renderHero(hero, upstream)
     if (commands) renderCommands(commands, upstream, translations)
-    if (workflow) renderWorkflow(workflow)
+    if (workflow) renderWorkflow(workflow, upstream)
     if (scenario) renderScenario(scenario)
     if (reference) renderReference(reference, upstream, translations)
     if (tools) renderTools(tools, upstream)

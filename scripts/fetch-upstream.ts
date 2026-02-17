@@ -6,6 +6,7 @@ const BRANCH = 'main'
 const FILES_TO_FETCH = [
     'docs/commands.md',
     'docs/supported-tools.md',
+    'docs/workflows.md',
     'docs/opsx.md',
     'README.md',
 ]

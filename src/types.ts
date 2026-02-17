@@ -34,6 +34,7 @@ export interface UpstreamData {
     tools: Tool[]
     toolSyntax: ToolSyntax[]
     skills: Skill[]
+    workflowHighlights: WorkflowHighlights
     meta: MetaInfo
     fetchedAt: string
     commitSha: string
@@ -50,6 +51,11 @@ export interface MetaInfo {
     toolCount: number
 }
 
+export interface WorkflowHighlights {
+    quickFeature: string[]
+    completion: string[]
+}
+
 export interface TranslationEntry {
     original: string
     translated: string
@@ -60,6 +66,7 @@ export interface Translations {
     commands: Record<string, {
         chineseName: string
         description: string
+        source?: string
     }>
     tools: Record<string, string>
     meta: Record<string, string>

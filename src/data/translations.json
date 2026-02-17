@@ -2,43 +2,53 @@
   "commands": {
     "/opsx:new": {
       "chineseName": "新",
-      "description": "创建一个新的变更目录，开始规划你的功能"
+      "description": "开始一个新的变更",
+      "source": "Start a new change"
     },
     "/opsx:continue": {
       "chineseName": "续",
-      "description": "每次只生成一个文档，可以逐步审核，适合重要功能"
+      "description": "基于依赖关系创建下一个工件",
+      "source": "Create the next artifact based on dependencies"
     },
     "/opsx:ff": {
       "chineseName": "快进",
-      "description": "一口气生成所有文档（proposal → specs → design → tasks），适合中小功能"
+      "description": "快速推进：一次性创建所有规划工件",
+      "source": "Fast-forward: create all planning artifacts at once"
     },
     "/opsx:apply": {
       "chineseName": "用",
-      "description": "执行 tasks.md 中的任务，开始写代码"
+      "description": "执行变更中的任务",
+      "source": "Implement tasks from the change"
     },
     "/opsx:verify": {
       "chineseName": "验",
-      "description": "三维度验证：完整性、正确性、一致性，确保实现符合规格"
+      "description": "验证实现是否与制品匹配",
+      "source": "Validate implementation matches artifacts"
     },
     "/opsx:sync": {
       "chineseName": "同",
-      "description": "把变更的 spec 合并到主 specs 目录（archive 时会自动提示）"
+      "description": "将增量规格合并到主规格中",
+      "source": "Merge delta specs into main specs"
     },
     "/opsx:archive": {
       "chineseName": "档",
-      "description": "完成后归档，保存到 archive 目录"
+      "description": "归档已完成的变更",
+      "source": "Archive a completed change"
     },
     "/opsx:bulk-archive": {
       "chineseName": "批档",
-      "description": "一次归档多个已完成的变更，自动检测 spec 冲突并解决"
+      "description": "批量归档多个变更",
+      "source": "Archive multiple changes at once"
     },
     "/opsx:explore": {
       "chineseName": "探",
-      "description": "只思考不写文件，用于前期调研和方案比较"
+      "description": "在确定更改前先思考想法",
+      "source": "Think through ideas before committing to a change"
     },
     "/opsx:onboard": {
       "chineseName": "学",
-      "description": "交互式引导教程，用真实代码库走一遍完整工作流"
+      "description": "完整工作流程的引导式教程",
+      "source": "Guided tutorial through the complete workflow"
     }
   },
   "tools": {},

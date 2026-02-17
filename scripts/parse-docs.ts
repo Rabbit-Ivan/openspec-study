@@ -1,6 +1,15 @@
 // Parse upstream markdown docs into structured JSON
 
-import type { Command, CommandArg, Tool, ToolSyntax, Skill, MetaInfo, UpstreamData } from '../src/types'
+import type {
+    Command,
+    CommandArg,
+    Tool,
+    ToolSyntax,
+    Skill,
+    MetaInfo,
+    UpstreamData,
+    WorkflowHighlights,
+} from '../src/types'
 
 /**
  * Parse commands.md to extract command list
@@ -159,12 +168,39 @@ function parseMeta(readme: string, toolCount: number): MetaInfo {
     const nodeVersion = nodeMatch ? nodeMatch[1] : ''
 
     // Extract recommended models
-    const modelMatch = readme.match(/We recommend\s+(.*?)(?:\s+for\b|\.)/i)
-    const recommendedModels = modelMatch
-        ? modelMatch[1].split(/\s+and\s+/).map(m => m.trim())
+    const modelLineMatch = readme.match(/We recommend\s+([^\n]+)/i)
+    const recommendedModels = modelLineMatch
+        ? modelLineMatch[1]
+            .replace(/\s+for\b[\s\S]*$/i, '')
+            .replace(/\.$/, '')
+            .split(/\s+and\s+/)
+            .map(m => m.trim())
+            .filter(Boolean)
         : []
 
     return { nodeVersion, recommendedModels, toolCount }
+}
+
+/**
+ * Parse workflow highlights from workflows.md
+ */
+function parseWorkflowHighlights(content: string): WorkflowHighlights {
+    const extractCommands = (section: string): string[] => {
+        const matches = section.match(/\/opsx:[a-z-]+/g) || []
+        const deduped: string[] = []
+        for (const cmd of matches) {
+            if (!deduped.includes(cmd)) deduped.push(cmd)
+        }
+        return deduped
+    }
+
+    const quickFeatureBlock = content.match(/### Quick Feature[\s\S]*?```text([\s\S]*?)```/i)?.[1] || ''
+    const completionBlock = content.match(/### Completing a Change[\s\S]*?```text([\s\S]*?)```/i)?.[1] || ''
+
+    return {
+        quickFeature: extractCommands(quickFeatureBlock),
+        completion: extractCommands(completionBlock),
+    }
 }
 
 /**
@@ -194,11 +230,13 @@ function parseQuickRef(content: string): Array<{ name: string; purpose: string }
 export function parseDocs(files: Record<string, string>, commitSha: string): UpstreamData {
     const commandsMd = files['docs/commands.md'] || ''
     const toolsMd = files['docs/supported-tools.md'] || ''
+    const workflowsMd = files['docs/workflows.md'] || ''
     const readmeMd = files['README.md'] || ''
 
     const commands = parseCommands(commandsMd)
     const { tools, skills } = parseTools(toolsMd)
     const toolSyntax = parseToolSyntax(commandsMd)
+    const workflowHighlights = parseWorkflowHighlights(workflowsMd)
     const meta = parseMeta(readmeMd, tools.length)
 
     // Merge purpose from quick reference
@@ -219,6 +257,7 @@ export function parseDocs(files: Record<string, string>, commitSha: string): Ups
         tools,
         toolSyntax,
         skills,
+        workflowHighlights,
         meta,
         fetchedAt: new Date().toISOString(),
         commitSha,
