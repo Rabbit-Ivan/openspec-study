@@ -719,6 +719,84 @@ section {
   font-size: 0.9rem;
 }
 
+.sync-card {
+  max-width: 760px;
+  margin: 1.2rem auto 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--ink-medium);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: left;
+}
+
+.sync-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.sync-status .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.sync-status.ok {
+  color: var(--jade-glow);
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.sync-status.ok .dot {
+  background: var(--jade-glow);
+}
+
+.sync-status.warn {
+  color: var(--gold-glow);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  background: rgba(251, 191, 36, 0.08);
+}
+
+.sync-status.warn .dot {
+  background: var(--gold-glow);
+}
+
+.sync-meta {
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+  margin-bottom: 0.25rem;
+}
+
+.sync-meta code,
+.sync-warning-list code {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--gold-glow);
+  background: rgba(251, 191, 36, 0.08);
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+}
+
+.sync-warning-title {
+  margin-top: 0.7rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+}
+
+.sync-warning-list {
+  margin-left: 1.2rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.sync-warning-list li {
+  margin-bottom: 0.25rem;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }

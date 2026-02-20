@@ -31,12 +31,16 @@ pnpm install
 
 | 变量名 | 必填 | 说明 |
 | --- | --- | --- |
+| `GITHUB_TOKEN` | 否 | GitHub API Token，用于提高限额并稳定执行提交查询与对比；生产环境定时同步建议必填。 |
 | `DEEPSEEK_API_KEY` | 否 | 用于调用 DeepSeek 翻译命令描述；未设置时会跳过翻译步骤，不影响页面启动和构建。 |
+| `SYNC_ALERT_WEBHOOK` | 否 | 同步失败告警 Webhook 地址；连续失败 2 次后触发，未设置时静默跳过。 |
 
 建议在项目根目录创建 `.env.local`：
 
 ```bash
+GITHUB_TOKEN=your_github_token
 DEEPSEEK_API_KEY=your_deepseek_api_key
+SYNC_ALERT_WEBHOOK=https://example.com/webhook
 ```
 
 ### 2.4 运行与构建命令

@@ -38,6 +38,7 @@ export interface UpstreamData {
     meta: MetaInfo
     fetchedAt: string
     commitSha: string
+    sync: SyncInfo
 }
 
 export interface Skill {
@@ -54,6 +55,16 @@ export interface MetaInfo {
 export interface WorkflowHighlights {
     quickFeature: string[]
     completion: string[]
+}
+
+export interface SyncInfo {
+    lastSyncAt: string
+    sourceCommitSha: string
+    contentCommitSha: string
+    status: 'ok' | 'warn' | 'error'
+    message: string
+    changedFiles: string[]
+    untrackedChanges: string[]
 }
 
 export interface TranslationEntry {

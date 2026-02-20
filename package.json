@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "fetch": "tsx scripts/build-data.ts",
+    "sync": "tsx scripts/build-data.ts",
     "dev": "vite",
     "prebuild": "tsx scripts/build-data.ts",
     "build": "vite build",

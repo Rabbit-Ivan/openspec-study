@@ -261,5 +261,14 @@ export function parseDocs(files: Record<string, string>, commitSha: string): Ups
         meta,
         fetchedAt: new Date().toISOString(),
         commitSha,
+        sync: {
+            lastSyncAt: new Date().toISOString(),
+            sourceCommitSha: commitSha,
+            contentCommitSha: commitSha,
+            status: 'ok',
+            message: '内容已同步到最新上游提交。',
+            changedFiles: [],
+            untrackedChanges: [],
+        },
     }
 }
