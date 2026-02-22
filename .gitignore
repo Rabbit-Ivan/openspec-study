@@ -7,3 +7,9 @@ dist
 src/data/upstream.json
 .env
 .env.local
+spec-docs/
+.agent/
+.claude/
+.codex/
+.opencode/
+openspec/
