@@ -1,7 +1,7 @@
 // Workflow section renderer
 
 import { SECTION_LABELS, MANTRA, WORKFLOW_DEMOS } from '../data/custom'
-import type { UpstreamData } from '../types'
+import type { Translations, UpstreamData } from '../types'
 
 interface TerminalLine {
     type: string
@@ -9,6 +9,10 @@ interface TerminalLine {
     command?: string
     arg?: string
     parts?: Array<{ type: string; text: string }>
+}
+
+function getTranslated(entry: { translated: string } | undefined, fallback: string): string {
+    return entry?.translated || fallback
 }
 
 function renderTerminalLine(line: TerminalLine): string {
@@ -69,7 +73,7 @@ function renderFlowChips(title: string, commands: string[]): string {
     `
 }
 
-export function renderWorkflow(container: HTMLElement, upstream: UpstreamData) {
+export function renderWorkflow(container: HTMLElement, upstream: UpstreamData, translations: Translations) {
     const modes = ['fast', 'detailed', 'parallel'] as const
     const quickFeatureFlow = upstream.workflowHighlights.quickFeature.length
         ? upstream.workflowHighlights.quickFeature
@@ -114,6 +118,31 @@ export function renderWorkflow(container: HTMLElement, upstream: UpstreamData) {
       </div>
     </div>
 
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.9rem; margin-top: 0.8rem;">
+      ${upstream.concepts.slice(0, 6).map(concept => `
+        <div style="padding: 0.95rem 1rem; border-radius: 10px; background: var(--ink-dark); border: 1px solid var(--ink-medium);">
+          <div style="font-family: 'JetBrains Mono', monospace; color: var(--jade-glow); font-size: 0.8rem; margin-bottom: 0.35rem;">
+            ${getTranslated(translations.concepts[`title:${concept.title}`], concept.title)}
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.9rem;">
+            ${getTranslated(translations.concepts[`desc:${concept.title}`], concept.description)}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+
+    <div style="margin-top: 1.4rem; padding: 1rem 1.1rem; border-radius: 10px; border: 1px solid rgba(74,222,128,0.22); background: rgba(74,222,128,0.08);">
+      <div style="font-family: 'JetBrains Mono', monospace; color: var(--jade-glow); font-size: 0.86rem; margin-bottom: 0.6rem;">Schema 自定义</div>
+      ${upstream.customization.slice(0, 3).map(item => `
+        <div style="margin-bottom: 0.75rem;">
+          <strong>${getTranslated(translations.customization[`title:${item.title}`], item.title)}</strong>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+            ${getTranslated(translations.customization[`desc:${item.title}`], item.description)}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+
     <div class="workflow-container">
       <div class="workflow-tabs">
         ${modes.map((mode, i) => `
@@ -132,6 +161,13 @@ export function renderWorkflow(container: HTMLElement, upstream: UpstreamData) {
           </div>
         `).join('')}
       </div>
+    </div>
+
+    <div style="margin-top: 1.1rem; padding: 1rem 1.2rem; border-radius: 10px; border: 1px solid var(--ink-medium); background: rgba(255,255,255,0.02);">
+      <div style="font-family: 'JetBrains Mono', monospace; color: var(--gold-glow); font-size: 0.86rem; margin-bottom: 0.6rem;">决策建议（/opsx:ff vs /opsx:continue）</div>
+      <ul style="margin-left: 1.2rem; color: var(--text-secondary);">
+        ${upstream.workflows.ffVsContinue.map(item => `<li>${item.situation} → <code>${item.use}</code></li>`).join('')}
+      </ul>
     </div>
   `
 }

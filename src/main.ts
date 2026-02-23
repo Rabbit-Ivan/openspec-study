@@ -27,13 +27,13 @@ function renderApp() {
     const tools = document.getElementById('tools')
     const footer = document.getElementById('app-footer')
 
-    if (hero) renderHero(hero, upstream)
+    if (hero) renderHero(hero, upstream, translations)
     if (commands) renderCommands(commands, upstream, translations)
-    if (workflow) renderWorkflow(workflow, upstream)
+    if (workflow) renderWorkflow(workflow, upstream, translations)
     if (scenario) renderScenario(scenario)
     if (reference) renderReference(reference, upstream, translations)
-    if (tools) renderTools(tools, upstream)
-    if (footer) renderFooter(footer, upstream)
+    if (tools) renderTools(tools, upstream, translations)
+    if (footer) renderFooter(footer, upstream, translations)
 
     // Initialize interactions
     initWorkflowTabs()

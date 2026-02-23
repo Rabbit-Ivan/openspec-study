@@ -2,15 +2,29 @@
 
 ## 1. 项目概述
 
-`openspec-guide` 是一个基于 Vite + TypeScript 的中文单页指南站点。  
-项目目标是将 OpenSpec 上游文档自动拉取、解析并展示为结构化的中文工作流页面。
+`openspec-guide` 是一个基于 Vite + TypeScript 的中文单页指南站点。
 
-核心流程：
+项目目标：
 
-1. 通过脚本拉取上游 Markdown 文档。
-2. 解析为结构化 JSON 数据（命令、工具、语法、元信息）。
-3. 可选使用 DeepSeek API 补全中文翻译。
-4. 前端读取 `src/data/*.json` 并渲染页面各区块。
+1. 自动拉取 OpenSpec 上游文档。
+2. 解析 Markdown 为结构化 JSON（命令、工作流、概念、CLI、迁移、多语言等）。
+3. 可选调用 DeepSeek API 做增量中文翻译。
+4. 前端读取 `src/data/*.json` 并在单页内渲染。
+
+当前数据管道已覆盖以下文档：
+
+- `README.md`
+- `docs/commands.md`
+- `docs/supported-tools.md`
+- `docs/workflows.md`
+- `docs/opsx.md`
+- `docs/concepts.md`
+- `docs/getting-started.md`
+- `docs/installation.md`
+- `docs/cli.md`
+- `docs/customization.md`
+- `docs/migration-guide.md`
+- `docs/multi-language.md`
 
 ---
 
@@ -18,8 +32,8 @@
 
 ### 2.1 环境要求
 
-- Node.js（建议 20+，需支持 `fetch` 与 ESM）。
-- pnpm（项目锁定：`pnpm@10.26.2`）。
+- Node.js 20+
+- pnpm（锁定 `pnpm@10.26.2`）
 
 ### 2.2 安装依赖
 
@@ -31,11 +45,11 @@ pnpm install
 
 | 变量名 | 必填 | 说明 |
 | --- | --- | --- |
-| `GITHUB_TOKEN` | 否 | GitHub API Token，用于提高限额并稳定执行提交查询与对比；生产环境定时同步建议必填。 |
-| `DEEPSEEK_API_KEY` | 否 | 用于调用 DeepSeek 翻译命令描述；未设置时会跳过翻译步骤，不影响页面启动和构建。 |
-| `SYNC_ALERT_WEBHOOK` | 否 | 同步失败告警 Webhook 地址；连续失败 2 次后触发，未设置时静默跳过。 |
+| `GITHUB_TOKEN` | 否 | 调用 GitHub API、提升限额、稳定拉取提交对比。 |
+| `DEEPSEEK_API_KEY` | 否 | 调用 DeepSeek 翻译；未设置时会跳过翻译。 |
+| `SYNC_ALERT_WEBHOOK` | 否 | 同步连续失败告警地址。 |
 
-建议在项目根目录创建 `.env.local`：
+示例（`.env.local`）：
 
 ```bash
 GITHUB_TOKEN=your_github_token
@@ -43,16 +57,16 @@ DEEPSEEK_API_KEY=your_deepseek_api_key
 SYNC_ALERT_WEBHOOK=https://example.com/webhook
 ```
 
-### 2.4 运行与构建命令
+### 2.4 常用命令
 
 ```bash
-# 拉取上游并生成本地数据（upstream.json / translations.json）
+# 拉取上游并更新 src/data/upstream.json、src/data/translations.json
 pnpm fetch
 
 # 本地开发
 pnpm dev
 
-# 生产构建（会先执行 prebuild，即自动跑数据构建脚本）
+# 生产构建（会先执行 prebuild，即自动同步数据）
 pnpm build
 
 # 预览构建产物
@@ -61,33 +75,44 @@ pnpm preview
 
 ---
 
-## 3. 项目前后端目录结构、页面路由、项目 API 接口
+## 3. 目录结构、页面路由、项目 API 接口
 
 ### 3.1 前后端目录结构
 
-当前仓库为前端展示 + 构建脚本模式，无独立后端服务目录。
+当前仓库为“前端单页 + Node 构建脚本”，无独立后端服务。
 
 ```text
 .
-├── index.html                  # 单页入口 HTML
+├── index.html
 ├── src/
-│   ├── main.ts                 # 前端入口，挂载各 section
-│   ├── style.css               # 全局样式
-│   ├── types.ts                # 类型定义
-│   ├── data/                   # 构建后数据（upstream/translations/custom）
-│   └── sections/               # 页面区块渲染模块
+│   ├── main.ts
+│   ├── style.css
+│   ├── types.ts
+│   ├── data/
+│   │   ├── upstream.json
+│   │   ├── translations.json
+│   │   └── custom.ts
+│   └── sections/
+│       ├── hero.ts
+│       ├── commands.ts
+│       ├── workflow.ts
+│       ├── scenario.ts
+│       ├── reference.ts
+│       ├── tools.ts
+│       └── footer.ts
 ├── scripts/
-│   ├── fetch-upstream.ts       # 拉取上游文档
-│   ├── parse-docs.ts           # 解析 markdown -> 结构化数据
-│   ├── translate.ts            # 调用 DeepSeek 翻译
-│   └── build-data.ts           # 编排 fetch/parse/translate/write 全流程
-└── openspec/config.yaml        # OpenSpec 配置
+│   ├── fetch-upstream.ts
+│   ├── parse-docs.ts
+│   ├── translate.ts
+│   └── build-data.ts
+├── .github/workflows/sync.yml
+└── openspec/config.yaml
 ```
 
-### 3.2 页面路由
+### 3.2 页面路由与锚点
 
-- 站点路由：`/`（单页）。
-- 页面内锚点导航：
+- 路由：`/`
+- 锚点：
   - `#commands`
   - `#workflow`
   - `#scenario`
@@ -98,23 +123,25 @@ pnpm preview
 
 #### A. 本仓库对外 HTTP API
 
-- 当前无后端服务，无自建 HTTP API 端点。
+- 无自建后端接口。
 
 #### B. 构建脚本调用的外部 API
 
 - GitHub Commit API  
   `GET https://api.github.com/repos/Fission-AI/OpenSpec/commits/main`
-- GitHub Raw 内容 API  
-  `GET https://raw.githubusercontent.com/Fission-AI/OpenSpec/main/{path}`
+- GitHub Compare API  
+  `GET https://api.github.com/repos/Fission-AI/OpenSpec/compare/{base}...{head}`
+- GitHub Raw API  
+  `GET https://raw.githubusercontent.com/Fission-AI/OpenSpec/{sha}/{path}`
 - DeepSeek Chat API（OpenAI 兼容）  
   Base URL：`https://api.deepseek.com`  
   Model：`deepseek-chat`
 
-#### C. 脚本内部模块接口（代码级）
+#### C. 脚本内部接口（代码级）
 
-- `fetchUpstream()`：拉取上游文档与最新提交 SHA。
-- `parseDocs(files, commitSha)`：解析文档为结构化数据。
-- `computeTranslations(upstream, existing)`：增量翻译内容。
+- `fetchUpstream(refOrSha?)`：拉取全部追踪文档。
+- `parseDocs(files, commitSha)`：解析文档为结构化 `UpstreamData`。
+- `computeTranslations(upstream, existing)`：增量翻译并返回 `Translations`。
 
 ---
 
@@ -122,22 +149,17 @@ pnpm preview
 
 ### 4.1 核心技术栈
 
-- 前端：Vite + TypeScript + 原生 DOM 渲染（无 React/Vue）。
-- 脚本运行：Node.js ESM + `tsx`。
-- 数据来源：GitHub 文档仓库。
-- 翻译服务：DeepSeek（通过 OpenAI SDK 兼容调用）。
+- 前端：Vite + TypeScript + 原生 DOM 渲染。
+- 脚本：Node.js ESM + `tsx`。
+- 数据源：OpenSpec GitHub 文档。
+- 翻译：DeepSeek（通过 OpenAI SDK 兼容调用）。
+- 自动同步：GitHub Actions（`sync.yml` 每天 UTC 06:00 + 手动触发）。
 
 ### 4.2 关键依赖
 
-- `vite`：开发服务器与打包。
-- `typescript`：类型系统。
-- `tsx`：直接运行 TypeScript 脚本。
-- `openai`：调用 DeepSeek 兼容接口。
-- `@types/node`：Node 类型支持。
+- `vite`
+- `typescript`
+- `tsx`
+- `openai`
+- `@types/node`
 
----
-
-## 5. 规则（新增）
-
-- 回答尽量用中文。
-- 如果没有显式要求，尽量不要写兼容代码。

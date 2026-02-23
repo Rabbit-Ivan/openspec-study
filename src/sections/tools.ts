@@ -1,13 +1,16 @@
 // Tools section renderer
 
-import type { UpstreamData } from '../types'
+import type { Translations, UpstreamData } from '../types'
 import { SECTION_LABELS } from '../data/custom'
 
-export function renderTools(container: HTMLElement, upstream: UpstreamData) {
+function getTranslated(entry: { translated: string } | undefined, fallback: string): string {
+    return entry?.translated || fallback
+}
+
+export function renderTools(container: HTMLElement, upstream: UpstreamData, translations: Translations) {
     const tools = upstream.tools
     const toolSyntax = upstream.toolSyntax
 
-    // Tool badge style
     const badgeStyle = `font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; padding: 0.35rem 0.75rem; background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.3); border-radius: 100px; color: var(--jade-glow);`
 
     container.innerHTML = `
@@ -41,7 +44,19 @@ export function renderTools(container: HTMLElement, upstream: UpstreamData) {
 
         <h3 style="font-size: 1.1rem; margin: 2rem 0 1rem; color: var(--jade-glow);">完整支持列表</h3>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-          ${tools.map(t => `<span style="${badgeStyle}">${t.name}</span>`).join('\n          ')}
+          ${tools.map(t => `<span style="${badgeStyle}" title="${getTranslated(translations.tools[t.name], t.name)}">${t.name}</span>`).join('\n          ')}
+        </div>
+
+        <h3 style="font-size: 1.1rem; margin: 2rem 0 1rem; color: var(--gold-glow);">多语言支持</h3>
+        <div style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 0.8rem;">
+          通过在 <code>openspec/config.yaml</code> 的 <code>context</code> 中声明目标语言，可以让所有产出物自动使用指定语言。
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          ${upstream.multiLanguage.examples.map(example => `
+            <span style="padding: 0.28rem 0.65rem; border-radius: 999px; border: 1px solid rgba(251,191,36,0.35); background: rgba(251,191,36,0.1); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold-glow);">
+              ${getTranslated(translations.multiLanguage[`lang:${example.language}`], example.language)}
+            </span>
+          `).join('')}
         </div>
       </div>
     </div>

@@ -51,6 +51,1281 @@
       "source": "Guided tutorial through the complete workflow"
     }
   },
-  "tools": {},
-  "meta": {}
+  "tools": {
+    "Amazon Q Developer": {
+      "original": "Amazon Q Developer",
+      "translated": "Amazon Q Developer",
+      "updatedAt": "2026-02-23T04:25:48.157Z"
+    },
+    "Antigravity": {
+      "original": "Antigravity",
+      "translated": "反重力",
+      "updatedAt": "2026-02-23T04:25:49.424Z"
+    },
+    "Auggie (Augment CLI)": {
+      "original": "Auggie (Augment CLI)",
+      "translated": "Auggie (Augment CLI)",
+      "updatedAt": "2026-02-23T04:25:50.906Z"
+    },
+    "Claude Code": {
+      "original": "Claude Code",
+      "translated": "Claude Code",
+      "updatedAt": "2026-02-23T04:25:52.222Z"
+    },
+    "Cline": {
+      "original": "Cline",
+      "translated": "Cline",
+      "updatedAt": "2026-02-23T04:25:53.354Z"
+    },
+    "CodeBuddy": {
+      "original": "CodeBuddy",
+      "translated": "CodeBuddy",
+      "updatedAt": "2026-02-23T04:25:54.675Z"
+    },
+    "Codex": {
+      "original": "Codex",
+      "translated": "Codex",
+      "updatedAt": "2026-02-23T04:25:56.595Z"
+    },
+    "Continue": {
+      "original": "Continue",
+      "translated": "继续",
+      "updatedAt": "2026-02-23T04:25:58.106Z"
+    },
+    "CoStrict": {
+      "original": "CoStrict",
+      "translated": "CoStrict",
+      "updatedAt": "2026-02-23T04:25:59.265Z"
+    },
+    "Crush": {
+      "original": "Crush",
+      "translated": "Crush",
+      "updatedAt": "2026-02-23T04:26:00.505Z"
+    },
+    "Cursor": {
+      "original": "Cursor",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nCursor",
+      "updatedAt": "2026-02-23T04:26:01.888Z"
+    },
+    "Factory Droid": {
+      "original": "Factory Droid",
+      "translated": "Factory Droid",
+      "updatedAt": "2026-02-23T04:26:03.180Z"
+    },
+    "Gemini CLI": {
+      "original": "Gemini CLI",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nGemini CLI",
+      "updatedAt": "2026-02-23T04:26:04.540Z"
+    },
+    "GitHub Copilot": {
+      "original": "GitHub Copilot",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nGitHub Copilot",
+      "updatedAt": "2026-02-23T04:26:06.041Z"
+    },
+    "iFlow": {
+      "original": "iFlow",
+      "translated": "iFlow",
+      "updatedAt": "2026-02-23T04:26:07.294Z"
+    },
+    "Kilo Code": {
+      "original": "Kilo Code",
+      "translated": "Kilo Code",
+      "updatedAt": "2026-02-23T04:26:08.871Z"
+    },
+    "Kiro": {
+      "original": "Kiro",
+      "translated": "Kiro",
+      "updatedAt": "2026-02-23T04:26:10.167Z"
+    },
+    "OpenCode": {
+      "original": "OpenCode",
+      "translated": "OpenCode",
+      "updatedAt": "2026-02-23T04:26:11.437Z"
+    },
+    "Pi": {
+      "original": "Pi",
+      "translated": "Pi",
+      "updatedAt": "2026-02-23T04:26:12.852Z"
+    },
+    "Qoder": {
+      "original": "Qoder",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nQoder",
+      "updatedAt": "2026-02-23T04:26:14.352Z"
+    },
+    "Qwen Code": {
+      "original": "Qwen Code",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nQwen Code",
+      "updatedAt": "2026-02-23T04:26:15.880Z"
+    },
+    "RooCode": {
+      "original": "RooCode",
+      "translated": "RooCode",
+      "updatedAt": "2026-02-23T04:26:17.224Z"
+    },
+    "Trae": {
+      "original": "Trae",
+      "translated": "Trae",
+      "updatedAt": "2026-02-23T04:26:18.932Z"
+    },
+    "Windsurf": {
+      "original": "Windsurf",
+      "translated": "Windsurf",
+      "updatedAt": "2026-02-23T04:26:20.306Z"
+    }
+  },
+  "meta": {
+    "nodeVersion": {
+      "original": "20.19.0",
+      "translated": "20.19.0",
+      "updatedAt": "2026-02-23T04:26:21.679Z"
+    },
+    "model:Opus 4.5": {
+      "original": "Opus 4.5",
+      "translated": "推荐模型名称：\n\nOpus 4.5",
+      "updatedAt": "2026-02-23T04:26:23.091Z"
+    },
+    "model:GPT 5.2": {
+      "original": "GPT 5.2",
+      "translated": "推荐模型名称：\n\nGPT 5.2",
+      "updatedAt": "2026-02-23T04:26:24.575Z"
+    }
+  },
+  "concepts": {
+    "title:Philosophy": {
+      "original": "Philosophy",
+      "translated": "核心理念",
+      "updatedAt": "2026-02-23T04:26:26.386Z"
+    },
+    "desc:Philosophy": {
+      "original": "OpenSpec is built around four principles:",
+      "translated": "OpenSpec 围绕四大原则构建：",
+      "updatedAt": "2026-02-23T04:26:27.782Z"
+    },
+    "title:The Big Picture": {
+      "original": "The Big Picture",
+      "translated": "核心概念总览",
+      "updatedAt": "2026-02-23T04:26:29.127Z"
+    },
+    "desc:The Big Picture": {
+      "original": "OpenSpec organizes your work into two main areas:",
+      "translated": "OpenSpec 将您的工作组织为两个主要领域：",
+      "updatedAt": "2026-02-23T04:26:30.479Z"
+    },
+    "title:Specs": {
+      "original": "Specs",
+      "translated": "核心概念标题：\n\n规格说明",
+      "updatedAt": "2026-02-23T04:26:31.874Z"
+    },
+    "desc:Specs": {
+      "original": "Specs describe your system's behavior using structured requirements and scenarios.",
+      "translated": "规格说明通过结构化需求和场景来描述系统的行为。",
+      "updatedAt": "2026-02-23T04:26:33.343Z"
+    },
+    "title:Purpose": {
+      "original": "Purpose",
+      "translated": "目的",
+      "updatedAt": "2026-02-23T04:26:34.628Z"
+    },
+    "desc:Purpose": {
+      "original": "Authentication and session management for the application.",
+      "translated": "应用程序的身份验证和会话管理。",
+      "updatedAt": "2026-02-23T04:26:36.007Z"
+    },
+    "title:Requirements": {
+      "original": "Requirements",
+      "translated": "需求",
+      "updatedAt": "2026-02-23T04:26:37.140Z"
+    },
+    "desc:Requirements": {
+      "original": "The system SHALL issue a JWT token upon successful login.",
+      "translated": "系统应在成功登录后签发 JWT 令牌。",
+      "updatedAt": "2026-02-23T04:26:38.528Z"
+    },
+    "title:Changes": {
+      "original": "Changes",
+      "translated": "核心概念：变更",
+      "updatedAt": "2026-02-23T04:26:39.931Z"
+    },
+    "desc:Changes": {
+      "original": "A change is a proposed modification to your system, packaged as a folder with everything needed to understand and implement it.",
+      "translated": "变更是指对系统提出的修改建议，以文件夹形式封装，包含理解和实施该变更所需的所有内容。",
+      "updatedAt": "2026-02-23T04:26:41.753Z"
+    },
+    "title:Artifacts": {
+      "original": "Artifacts",
+      "translated": "工件",
+      "updatedAt": "2026-02-23T04:26:43.086Z"
+    },
+    "desc:Artifacts": {
+      "original": "Artifacts are the documents within a change that guide the work.",
+      "translated": "工件是变更中的文档，用于指导工作。",
+      "updatedAt": "2026-02-23T04:26:44.454Z"
+    },
+    "title:Intent": {
+      "original": "Intent",
+      "translated": "意图",
+      "updatedAt": "2026-02-23T04:26:46.061Z"
+    },
+    "desc:Intent": {
+      "original": "Users have requested a dark mode option to reduce eye strain during nighttime usage and match system preferences.",
+      "translated": "用户要求提供深色模式选项，以减轻夜间使用时的视觉疲劳，并与系统偏好设置保持一致。",
+      "updatedAt": "2026-02-23T04:26:47.848Z"
+    },
+    "title:Scope": {
+      "original": "Scope",
+      "translated": "作用域",
+      "updatedAt": "2026-02-23T04:26:49.148Z"
+    },
+    "desc:Scope": {
+      "original": "In scope:",
+      "translated": "在范围内：",
+      "updatedAt": "2026-02-23T04:26:50.617Z"
+    },
+    "title:Approach": {
+      "original": "Approach",
+      "translated": "核心概念",
+      "updatedAt": "2026-02-23T04:26:51.922Z"
+    },
+    "desc:Approach": {
+      "original": "Use CSS custom properties for theming with a React context for state management. Detect system preference on first load, allow manual override.",
+      "translated": "使用 CSS 自定义属性实现主题化，配合 React 上下文进行状态管理。首次加载时检测系统偏好设置，并允许手动覆盖。",
+      "updatedAt": "2026-02-23T04:26:53.655Z"
+    },
+    "title:Technical Approach": {
+      "original": "Technical Approach",
+      "translated": "技术方案",
+      "updatedAt": "2026-02-23T04:26:54.960Z"
+    },
+    "desc:Technical Approach": {
+      "original": "Theme state managed via React Context to avoid prop drilling. CSS custom properties enable runtime switching without class toggling.",
+      "translated": "通过React Context管理主题状态，避免属性透传。CSS自定义属性支持运行时切换，无需类名切换。",
+      "updatedAt": "2026-02-23T04:26:57.095Z"
+    },
+    "title:Architecture Decisions": {
+      "original": "Architecture Decisions",
+      "translated": "架构决策",
+      "updatedAt": "2026-02-23T04:26:58.319Z"
+    },
+    "desc:Architecture Decisions": {
+      "original": "Using React Context for theme state because:",
+      "translated": "使用 React Context 管理主题状态的原因：",
+      "updatedAt": "2026-02-23T04:26:59.848Z"
+    },
+    "title:Data Flow": {
+      "original": "Data Flow",
+      "translated": "数据流",
+      "updatedAt": "2026-02-23T04:27:01.096Z"
+    },
+    "title:File Changes": {
+      "original": "File Changes",
+      "translated": "文件变更",
+      "updatedAt": "2026-02-23T04:27:02.497Z"
+    },
+    "title:1. Theme Infrastructure": {
+      "original": "1. Theme Infrastructure",
+      "translated": "1. 主题基础设施",
+      "updatedAt": "2026-02-23T04:27:03.683Z"
+    },
+    "title:2. UI Components": {
+      "original": "2. UI Components",
+      "translated": "2. UI 组件",
+      "updatedAt": "2026-02-23T04:27:04.953Z"
+    },
+    "title:3. Styling": {
+      "original": "3. Styling",
+      "translated": "3. 样式处理",
+      "updatedAt": "2026-02-23T04:27:06.569Z"
+    },
+    "title:Delta Specs": {
+      "original": "Delta Specs",
+      "translated": "Delta Specs 核心概念",
+      "updatedAt": "2026-02-23T04:27:07.914Z"
+    },
+    "desc:Delta Specs": {
+      "original": "Delta specs are the key concept that makes OpenSpec work for brownfield development. They describe what's changing rather than restating the entire spec.",
+      "translated": "Delta specs 是使 OpenSpec 适用于遗留系统开发的核心概念。它们描述的是变更内容，而非重新声明整个规范。",
+      "updatedAt": "2026-02-23T04:27:10.003Z"
+    },
+    "title:ADDED Requirements": {
+      "original": "ADDED Requirements",
+      "translated": "新增需求",
+      "updatedAt": "2026-02-23T04:27:11.578Z"
+    },
+    "desc:ADDED Requirements": {
+      "original": "The system MUST support TOTP-based two-factor authentication.",
+      "translated": "系统必须支持基于TOTP的双因素认证。",
+      "updatedAt": "2026-02-23T04:27:13.421Z"
+    },
+    "title:MODIFIED Requirements": {
+      "original": "MODIFIED Requirements",
+      "translated": "修改后的需求",
+      "updatedAt": "2026-02-23T04:27:15.168Z"
+    },
+    "desc:MODIFIED Requirements": {
+      "original": "The system MUST expire sessions after 15 minutes of inactivity. (Previously: 30 minutes)",
+      "translated": "系统必须在15分钟无活动后使会话失效。（之前：30分钟）",
+      "updatedAt": "2026-02-23T04:27:16.749Z"
+    },
+    "title:REMOVED Requirements": {
+      "original": "REMOVED Requirements",
+      "translated": "已移除的要求",
+      "updatedAt": "2026-02-23T04:27:18.057Z"
+    },
+    "desc:REMOVED Requirements": {
+      "original": "(Deprecated in favor of 2FA. Users should re-authenticate each session.)",
+      "translated": "（已弃用，建议使用双因素认证。用户应在每个会话中重新进行身份验证。）",
+      "updatedAt": "2026-02-23T04:27:19.787Z"
+    },
+    "title:Schemas": {
+      "original": "Schemas",
+      "translated": "核心概念标题：\n\n模式",
+      "updatedAt": "2026-02-23T04:27:21.030Z"
+    },
+    "desc:Schemas": {
+      "original": "Schemas define the artifact types and their dependencies for a workflow.",
+      "translated": "模式定义了工作流中的工件类型及其依赖关系。",
+      "updatedAt": "2026-02-23T04:27:22.541Z"
+    },
+    "title:Archive": {
+      "original": "Archive",
+      "translated": "归档",
+      "updatedAt": "2026-02-23T04:27:23.563Z"
+    },
+    "desc:Archive": {
+      "original": "Archiving completes a change by merging its delta specs into the main specs and preserving the change for history.",
+      "translated": "归档通过将变更的增量规格合并到主规格中并保留变更历史来完成一个变更。",
+      "updatedAt": "2026-02-23T04:27:25.293Z"
+    },
+    "title:How It All Fits Together": {
+      "original": "How It All Fits Together",
+      "translated": "核心概念：整体架构解析",
+      "updatedAt": "2026-02-23T04:27:26.767Z"
+    },
+    "desc:How It All Fits Together": {
+      "original": "The virtuous cycle:",
+      "translated": "良性循环：",
+      "updatedAt": "2026-02-23T04:27:28.042Z"
+    },
+    "glossary-term:Artifact": {
+      "original": "Artifact",
+      "translated": "制品",
+      "updatedAt": "2026-02-23T04:27:29.415Z"
+    },
+    "glossary-def:Artifact": {
+      "original": "A document within a change (proposal, design, tasks, or delta specs)",
+      "translated": "变更中的文档（提案、设计、任务或增量规范）",
+      "updatedAt": "2026-02-23T04:27:30.936Z"
+    },
+    "glossary-term:Archive": {
+      "original": "Archive",
+      "translated": "归档",
+      "updatedAt": "2026-02-23T04:27:32.335Z"
+    },
+    "glossary-def:Archive": {
+      "original": "The process of completing a change and merging its deltas into main specs",
+      "translated": "完成变更并将其增量合并到主规范中的过程",
+      "updatedAt": "2026-02-23T04:27:33.809Z"
+    },
+    "glossary-term:Change": {
+      "original": "Change",
+      "translated": "变更",
+      "updatedAt": "2026-02-23T04:27:35.104Z"
+    },
+    "glossary-def:Change": {
+      "original": "A proposed modification to the system, packaged as a folder with artifacts",
+      "translated": "对系统提出的修改建议，以包含工件的文件夹形式打包",
+      "updatedAt": "2026-02-23T04:27:36.709Z"
+    },
+    "glossary-term:Delta spec": {
+      "original": "Delta spec",
+      "translated": "Delta 规格",
+      "updatedAt": "2026-02-23T04:27:37.995Z"
+    },
+    "glossary-def:Delta spec": {
+      "original": "A spec that describes changes (ADDED/MODIFIED/REMOVED) relative to current specs",
+      "translated": "描述相对于当前规格变更（新增/修改/删除）的规格说明",
+      "updatedAt": "2026-02-23T04:27:39.640Z"
+    },
+    "glossary-term:Domain": {
+      "original": "Domain",
+      "translated": "域",
+      "updatedAt": "2026-02-23T04:27:40.940Z"
+    },
+    "glossary-def:Domain": {
+      "original": "A logical grouping for specs (e.g., auth/, payments/)",
+      "translated": "规范集的逻辑分组（例如：auth/、payments/）",
+      "updatedAt": "2026-02-23T04:27:42.368Z"
+    },
+    "glossary-term:Requirement": {
+      "original": "Requirement",
+      "translated": "需求",
+      "updatedAt": "2026-02-23T04:27:43.982Z"
+    },
+    "glossary-def:Requirement": {
+      "original": "A specific behavior the system must have",
+      "translated": "系统必须具备的特定行为",
+      "updatedAt": "2026-02-23T04:27:45.706Z"
+    },
+    "glossary-term:Scenario": {
+      "original": "Scenario",
+      "translated": "场景",
+      "updatedAt": "2026-02-23T04:27:46.986Z"
+    },
+    "glossary-def:Scenario": {
+      "original": "A concrete example of a requirement, typically in Given/When/Then format",
+      "translated": "需求的具体示例，通常采用 Given/When/Then 格式",
+      "updatedAt": "2026-02-23T04:27:48.636Z"
+    },
+    "glossary-term:Schema": {
+      "original": "Schema",
+      "translated": "架构",
+      "updatedAt": "2026-02-23T04:27:49.956Z"
+    },
+    "glossary-def:Schema": {
+      "original": "A definition of artifact types and their dependencies",
+      "translated": "工件类型及其依赖关系的定义",
+      "updatedAt": "2026-02-23T04:27:51.417Z"
+    },
+    "glossary-term:Spec": {
+      "original": "Spec",
+      "translated": "规格",
+      "updatedAt": "2026-02-23T04:27:53.021Z"
+    },
+    "glossary-def:Spec": {
+      "original": "A specification describing system behavior, containing requirements and scenarios",
+      "translated": "描述系统行为的规范，包含需求和场景",
+      "updatedAt": "2026-02-23T04:27:54.488Z"
+    },
+    "glossary-term:Source of truth": {
+      "original": "Source of truth",
+      "translated": "事实来源",
+      "updatedAt": "2026-02-23T04:27:55.417Z"
+    },
+    "glossary-def:Source of truth": {
+      "original": "The openspec/specs/ directory, containing the current agreed-upon behavior",
+      "translated": "openspec/specs/ 目录，包含当前已达成一致的行为规范",
+      "updatedAt": "2026-02-23T04:27:57.089Z"
+    }
+  },
+  "gettingStarted": {
+    "title:How It Works": {
+      "original": "How It Works",
+      "translated": "工作原理",
+      "updatedAt": "2026-02-23T04:27:58.425Z"
+    },
+    "desc:How It Works": {
+      "original": "OpenSpec helps you and your AI coding assistant agree on what to build before any code is written. The workflow follows a simple pattern:",
+      "translated": "OpenSpec 帮助您和您的 AI 编程助手在编写任何代码之前就构建内容达成一致。工作流程遵循一个简单的模式：",
+      "updatedAt": "2026-02-23T04:28:00.223Z"
+    },
+    "title:What OpenSpec Creates": {
+      "original": "What OpenSpec Creates",
+      "translated": "OpenSpec 创建的内容",
+      "updatedAt": "2026-02-23T04:28:01.575Z"
+    },
+    "desc:What OpenSpec Creates": {
+      "original": "After running openspec init, your project has this structure:",
+      "translated": "运行 openspec init 后，你的项目结构如下：",
+      "updatedAt": "2026-02-23T04:28:03.069Z"
+    },
+    "title:Understanding Artifacts": {
+      "original": "Understanding Artifacts",
+      "translated": "理解制品",
+      "updatedAt": "2026-02-23T04:28:04.354Z"
+    },
+    "desc:Understanding Artifacts": {
+      "original": "Each change folder contains artifacts that guide the work:",
+      "translated": "每个变更文件夹都包含指导工作的构件：",
+      "updatedAt": "2026-02-23T04:28:05.795Z"
+    },
+    "title:How Delta Specs Work": {
+      "original": "How Delta Specs Work",
+      "translated": "Delta Specs 工作原理",
+      "updatedAt": "2026-02-23T04:28:07.314Z"
+    },
+    "desc:How Delta Specs Work": {
+      "original": "Delta specs are the key concept in OpenSpec. They show what's changing relative to your current specs.",
+      "translated": "Delta specs 是 OpenSpec 中的核心概念，用于展示相对于当前规格的变更内容。",
+      "updatedAt": "2026-02-23T04:28:09.014Z"
+    },
+    "title:1. Start the Change": {
+      "original": "1. Start the Change",
+      "translated": "1. 启动变更",
+      "updatedAt": "2026-02-23T04:28:10.264Z"
+    },
+    "title:2. Create Artifacts": {
+      "original": "2. Create Artifacts",
+      "translated": "2. 创建制品",
+      "updatedAt": "2026-02-23T04:28:11.795Z"
+    },
+    "desc:2. Create Artifacts": {
+      "original": "Use /opsx:ff (fast-forward) to create all planning artifacts at once:",
+      "translated": "使用 /opsx:ff（快速前进）命令一次性创建所有规划工件：",
+      "updatedAt": "2026-02-23T04:28:13.393Z"
+    },
+    "title:3. What Gets Created": {
+      "original": "3. What Gets Created",
+      "translated": "3. 创建的内容",
+      "updatedAt": "2026-02-23T04:28:14.829Z"
+    },
+    "desc:3. What Gets Created": {
+      "original": "proposal.md - Captures the intent:",
+      "translated": "proposal.md - 捕获意图：",
+      "updatedAt": "2026-02-23T04:28:16.209Z"
+    },
+    "title:Verifying and Reviewing": {
+      "original": "Verifying and Reviewing",
+      "translated": "验证与审查",
+      "updatedAt": "2026-02-23T04:28:17.733Z"
+    },
+    "desc:Verifying and Reviewing": {
+      "original": "Use the CLI to check on your changes:",
+      "translated": "使用 CLI 检查您的更改：",
+      "updatedAt": "2026-02-23T04:28:19.154Z"
+    }
+  },
+  "installation": {
+    "title:Prerequisites": {
+      "original": "Prerequisites",
+      "translated": "先决条件",
+      "updatedAt": "2026-02-23T04:28:20.692Z"
+    },
+    "title:Package Managers · npm": {
+      "original": "Package Managers · npm",
+      "translated": "包管理器 · npm",
+      "updatedAt": "2026-02-23T04:28:22.108Z"
+    },
+    "desc:Package Managers · npm": {
+      "original": "使用 npm 安装 OpenSpec。",
+      "translated": "使用 npm 安装 OpenSpec。",
+      "updatedAt": "2026-02-23T04:28:23.523Z"
+    },
+    "title:Package Managers · pnpm": {
+      "original": "Package Managers · pnpm",
+      "translated": "包管理器 · pnpm",
+      "updatedAt": "2026-02-23T04:28:24.836Z"
+    },
+    "desc:Package Managers · pnpm": {
+      "original": "使用 pnpm 安装 OpenSpec。",
+      "translated": "使用 pnpm 安装 OpenSpec。",
+      "updatedAt": "2026-02-23T04:28:26.209Z"
+    },
+    "title:Package Managers · yarn": {
+      "original": "Package Managers · yarn",
+      "translated": "包管理器 · yarn",
+      "updatedAt": "2026-02-23T04:28:27.567Z"
+    },
+    "desc:Package Managers · yarn": {
+      "original": "使用 yarn 安装 OpenSpec。",
+      "translated": "使用 yarn 安装 OpenSpec。",
+      "updatedAt": "2026-02-23T04:28:29.007Z"
+    },
+    "title:Package Managers · bun": {
+      "original": "Package Managers · bun",
+      "translated": "包管理器 · bun",
+      "updatedAt": "2026-02-23T04:28:30.320Z"
+    },
+    "desc:Package Managers · bun": {
+      "original": "使用 bun 安装 OpenSpec。",
+      "translated": "使用 bun 安装 OpenSpec。",
+      "updatedAt": "2026-02-23T04:28:31.661Z"
+    },
+    "title:Nix": {
+      "original": "Nix",
+      "translated": "Nix 安装步骤",
+      "updatedAt": "2026-02-23T04:28:33.185Z"
+    },
+    "desc:Nix": {
+      "original": "Run OpenSpec directly without installation:",
+      "translated": "无需安装直接运行 OpenSpec：",
+      "updatedAt": "2026-02-23T04:28:34.743Z"
+    },
+    "title:Verify Installation": {
+      "original": "Verify Installation",
+      "translated": "验证安装",
+      "updatedAt": "2026-02-23T04:28:36.009Z"
+    },
+    "title:Next Steps": {
+      "original": "Next Steps",
+      "translated": "后续步骤",
+      "updatedAt": "2026-02-23T04:28:37.451Z"
+    },
+    "desc:Next Steps": {
+      "original": "After installing, initialize OpenSpec in your project:",
+      "translated": "安装完成后，在您的项目中初始化 OpenSpec：",
+      "updatedAt": "2026-02-23T04:28:38.836Z"
+    }
+  },
+  "cli": {
+    "name:openspec init": {
+      "original": "openspec init",
+      "translated": "openspec init",
+      "updatedAt": "2026-02-23T04:28:40.232Z"
+    },
+    "desc:openspec init": {
+      "original": "Initialize OpenSpec in your project. Creates the folder structure and configures AI tool integrations.",
+      "translated": "初始化项目中的 OpenSpec。创建文件夹结构并配置 AI 工具集成。",
+      "updatedAt": "2026-02-23T04:28:41.708Z"
+    },
+    "name:openspec update": {
+      "original": "openspec update",
+      "translated": "openspec update",
+      "updatedAt": "2026-02-23T04:28:43.129Z"
+    },
+    "desc:openspec update": {
+      "original": "Update OpenSpec instruction files after upgrading the CLI. Re-generates AI tool configuration files.",
+      "translated": "更新 CLI 后，更新 OpenSpec 指令文件。重新生成 AI 工具配置文件。",
+      "updatedAt": "2026-02-23T04:28:44.870Z"
+    },
+    "name:openspec list": {
+      "original": "openspec list",
+      "translated": "openspec list",
+      "updatedAt": "2026-02-23T04:28:46.233Z"
+    },
+    "desc:openspec list": {
+      "original": "List changes or specs in your project.",
+      "translated": "列出项目中的变更或规格。",
+      "updatedAt": "2026-02-23T04:28:47.933Z"
+    },
+    "name:openspec view": {
+      "original": "openspec view",
+      "translated": "openspec view",
+      "updatedAt": "2026-02-23T04:28:49.305Z"
+    },
+    "desc:openspec view": {
+      "original": "Display an interactive dashboard for exploring specs and changes.",
+      "translated": "显示用于探索规格和变更的交互式仪表板。",
+      "updatedAt": "2026-02-23T04:28:50.862Z"
+    },
+    "name:openspec show": {
+      "original": "openspec show",
+      "translated": "openspec show",
+      "updatedAt": "2026-02-23T04:28:52.217Z"
+    },
+    "desc:openspec show": {
+      "original": "Display details of a change or spec.",
+      "translated": "显示变更或规范的详细信息。",
+      "updatedAt": "2026-02-23T04:28:53.676Z"
+    },
+    "name:openspec validate": {
+      "original": "openspec validate",
+      "translated": "openspec validate",
+      "updatedAt": "2026-02-23T04:28:55.106Z"
+    },
+    "desc:openspec validate": {
+      "original": "Validate changes and specs for structural issues.",
+      "translated": "验证变更和规格的结构性问题。",
+      "updatedAt": "2026-02-23T04:28:56.647Z"
+    },
+    "name:openspec archive": {
+      "original": "openspec archive",
+      "translated": "openspec archive",
+      "updatedAt": "2026-02-23T04:28:57.909Z"
+    },
+    "desc:openspec archive": {
+      "original": "Archive a completed change and merge delta specs into main specs.",
+      "translated": "归档已完成的变更并将增量规格合并至主规格。",
+      "updatedAt": "2026-02-23T04:28:59.501Z"
+    },
+    "name:openspec status": {
+      "original": "openspec status",
+      "translated": "openspec status",
+      "updatedAt": "2026-02-23T04:29:00.794Z"
+    },
+    "desc:openspec status": {
+      "original": "Display artifact completion status for a change.",
+      "translated": "显示变更的制品完成状态。",
+      "updatedAt": "2026-02-23T04:29:02.205Z"
+    },
+    "name:openspec instructions": {
+      "original": "openspec instructions",
+      "translated": "openspec 指令",
+      "updatedAt": "2026-02-23T04:29:03.687Z"
+    },
+    "desc:openspec instructions": {
+      "original": "Get enriched instructions for creating an artifact or applying tasks. Used by AI agents to understand what to create next.",
+      "translated": "获取创建工件或应用任务的详细说明。供AI代理理解下一步创建内容时使用。",
+      "updatedAt": "2026-02-23T04:29:05.458Z"
+    },
+    "name:openspec templates": {
+      "original": "openspec templates",
+      "translated": "openspec 模板",
+      "updatedAt": "2026-02-23T04:29:06.812Z"
+    },
+    "desc:openspec templates": {
+      "original": "Show resolved template paths for all artifacts in a schema.",
+      "translated": "显示架构中所有构件的已解析模板路径。",
+      "updatedAt": "2026-02-23T04:29:08.420Z"
+    },
+    "name:openspec schemas": {
+      "original": "openspec schemas",
+      "translated": "openspec schemas",
+      "updatedAt": "2026-02-23T04:29:09.749Z"
+    },
+    "desc:openspec schemas": {
+      "original": "List available workflow schemas with their descriptions and artifact flows.",
+      "translated": "列出可用的工作流模式及其描述和工件流程。",
+      "updatedAt": "2026-02-23T04:29:11.465Z"
+    },
+    "name:openspec schema init": {
+      "original": "openspec schema init",
+      "translated": "openspec schema init",
+      "updatedAt": "2026-02-23T04:29:12.950Z"
+    },
+    "desc:openspec schema init": {
+      "original": "Create a new project-local schema.",
+      "translated": "创建新的项目本地架构。",
+      "updatedAt": "2026-02-23T04:29:14.672Z"
+    },
+    "name:openspec schema fork": {
+      "original": "openspec schema fork",
+      "translated": "openspec schema fork",
+      "updatedAt": "2026-02-23T04:29:16.076Z"
+    },
+    "desc:openspec schema fork": {
+      "original": "Copy an existing schema to your project for customization.",
+      "translated": "将现有架构复制到您的项目中进行自定义。",
+      "updatedAt": "2026-02-23T04:29:17.650Z"
+    },
+    "name:openspec schema validate": {
+      "original": "openspec schema validate",
+      "translated": "openspec schema validate",
+      "updatedAt": "2026-02-23T04:29:19.015Z"
+    },
+    "desc:openspec schema validate": {
+      "original": "Validate a schema's structure and templates.",
+      "translated": "验证模式的结构与模板。",
+      "updatedAt": "2026-02-23T04:29:20.538Z"
+    },
+    "name:openspec schema which": {
+      "original": "openspec schema which",
+      "translated": "openspec schema which",
+      "updatedAt": "2026-02-23T04:29:22.054Z"
+    },
+    "desc:openspec schema which": {
+      "original": "Show where a schema resolves from (useful for debugging precedence).",
+      "translated": "显示模式解析来源（有助于调试优先级）。",
+      "updatedAt": "2026-02-23T04:29:23.299Z"
+    },
+    "name:openspec config": {
+      "original": "openspec config",
+      "translated": "openspec config",
+      "updatedAt": "2026-02-23T04:29:24.603Z"
+    },
+    "desc:openspec config": {
+      "original": "View and modify global OpenSpec configuration.",
+      "translated": "查看和修改全局 OpenSpec 配置。",
+      "updatedAt": "2026-02-23T04:29:26.156Z"
+    },
+    "name:openspec feedback": {
+      "original": "openspec feedback",
+      "translated": "openspec 反馈",
+      "updatedAt": "2026-02-23T04:29:27.776Z"
+    },
+    "desc:openspec feedback": {
+      "original": "Submit feedback about OpenSpec. Creates a GitHub issue.",
+      "translated": "提交关于 OpenSpec 的反馈。创建一个 GitHub issue。",
+      "updatedAt": "2026-02-23T04:29:29.248Z"
+    },
+    "name:openspec completion": {
+      "original": "openspec completion",
+      "translated": "openspec completion",
+      "updatedAt": "2026-02-23T04:29:30.610Z"
+    },
+    "desc:openspec completion": {
+      "original": "Manage shell completions for the OpenSpec CLI.",
+      "translated": "管理 OpenSpec CLI 的 shell 自动补全功能。",
+      "updatedAt": "2026-02-23T04:29:32.102Z"
+    }
+  },
+  "customization": {
+    "title:Project Configuration": {
+      "original": "Project Configuration",
+      "translated": "项目配置",
+      "updatedAt": "2026-02-23T04:29:33.395Z"
+    },
+    "desc:Project Configuration": {
+      "original": "The openspec/config.yaml file is the easiest way to customize OpenSpec for your team. It lets you:",
+      "translated": "openspec/config.yaml 文件是为团队定制 OpenSpec 的最简便方式。它支持您：",
+      "updatedAt": "2026-02-23T04:29:35.198Z"
+    },
+    "title:Custom Schemas": {
+      "original": "Custom Schemas",
+      "translated": "自定义 Schema",
+      "updatedAt": "2026-02-23T04:29:36.451Z"
+    },
+    "desc:Custom Schemas": {
+      "original": "When project config isn't enough, create your own schema with a completely custom workflow. Custom schemas live in your project's openspec/schemas/ directory and are version-controlled with your code.",
+      "translated": "当项目配置不够用时，可通过完全自定义的工作流程创建专属Schema。自定义Schema存放于项目的openspec/schemas/目录中，并随代码进行版本控制。",
+      "updatedAt": "2026-02-23T04:29:38.529Z"
+    },
+    "title:Why": {
+      "original": "Why",
+      "translated": "为什么",
+      "updatedAt": "2026-02-23T04:29:39.861Z"
+    },
+    "desc:Why": {
+      "original": "<!-- Explain the motivation for this change. What problem does this solve? -->",
+      "translated": "<!-- 说明本次变更的动机。解决了什么问题？ -->",
+      "updatedAt": "2026-02-23T04:29:41.382Z"
+    },
+    "title:What Changes": {
+      "original": "What Changes",
+      "translated": "变更内容",
+      "updatedAt": "2026-02-23T04:29:42.612Z"
+    },
+    "desc:What Changes": {
+      "original": "<!-- Describe what will change. Be specific about new capabilities or modifications. -->",
+      "translated": "<!-- 请描述具体变更内容。详细说明新增功能或修改点。 -->",
+      "updatedAt": "2026-02-23T04:29:44.388Z"
+    },
+    "title:Impact": {
+      "original": "Impact",
+      "translated": "影响",
+      "updatedAt": "2026-02-23T04:29:45.709Z"
+    },
+    "desc:Impact": {
+      "original": "<!-- Affected code, APIs, dependencies, systems --> openspec schema validate my-workflow",
+      "translated": "<!-- 受影响的代码、API、依赖项、系统 --> openspec schema validate my-workflow",
+      "updatedAt": "2026-02-23T04:29:47.847Z"
+    },
+    "title:Examples": {
+      "original": "Examples",
+      "translated": "示例",
+      "updatedAt": "2026-02-23T04:29:49.079Z"
+    },
+    "desc:Examples": {
+      "original": "A minimal workflow for quick iterations:",
+      "translated": "一个用于快速迭代的最小化工作流：",
+      "updatedAt": "2026-02-23T04:29:50.560Z"
+    }
+  },
+  "migrationGuide": {
+    "title:What's Changing?": {
+      "original": "What's Changing?",
+      "translated": "有哪些变化？",
+      "updatedAt": "2026-02-23T04:29:51.878Z"
+    },
+    "desc:What's Changing?": {
+      "original": "OPSX replaces the old phase-locked workflow with a fluid, action-based approach. Here's the key shift:",
+      "translated": "OPSX 将原有的阶段锁定工作流替换为基于操作的灵活方法。核心转变如下：",
+      "updatedAt": "2026-02-23T04:29:53.582Z"
+    },
+    "title:Before You Begin": {
+      "original": "Before You Begin",
+      "translated": "准备工作",
+      "updatedAt": "2026-02-23T04:29:54.967Z"
+    },
+    "desc:Before You Begin": {
+      "original": "The migration process is designed with preservation in mind:",
+      "translated": "迁移过程的设计理念是确保数据完整性：",
+      "updatedAt": "2026-02-23T04:29:56.321Z"
+    },
+    "title:Running the Migration": {
+      "original": "Running the Migration",
+      "translated": "运行迁移",
+      "updatedAt": "2026-02-23T04:29:57.543Z"
+    },
+    "desc:Running the Migration": {
+      "original": "Both openspec init and openspec update detect legacy files and guide you through the same cleanup process. Use whichever fits your situation:",
+      "translated": "openspec init 和 openspec update 都能检测遗留文件并引导您完成相同的清理流程。请根据实际情况选择使用。",
+      "updatedAt": "2026-02-23T04:29:59.742Z"
+    },
+    "title:Migrating project.md to config.yaml": {
+      "original": "Migrating project.md to config.yaml",
+      "translated": "将 project.md 迁移到 config.yaml",
+      "updatedAt": "2026-02-23T04:30:01.653Z"
+    },
+    "desc:Migrating project.md to config.yaml": {
+      "original": "The old openspec/project.md was a freeform markdown file for project context. The new openspec/config.yaml is structured and—critically—injected into every planning request so your conventions are always present when the AI works.",
+      "translated": "旧的 openspec/project.md 是一个自由格式的 Markdown 文件，用于记录项目背景信息。新的 openspec/config.yaml 采用结构化格式，并且关键的是，它会被注入到每个规划请求中，因此当 AI 工作时，您的项目规范始终可用。",
+      "updatedAt": "2026-02-23T04:30:04.135Z"
+    },
+    "title:Conventions": {
+      "original": "Conventions",
+      "translated": "约定",
+      "updatedAt": "2026-02-23T04:30:05.555Z"
+    },
+    "desc:Conventions": {
+      "original": "schema: spec-driven",
+      "translated": "schema：规范驱动",
+      "updatedAt": "2026-02-23T04:30:07.302Z"
+    },
+    "title:The New Commands": {
+      "original": "The New Commands",
+      "translated": "新命令",
+      "updatedAt": "2026-02-23T04:30:08.670Z"
+    },
+    "desc:The New Commands": {
+      "original": "After migration, you have 9 OPSX commands instead of 3:",
+      "translated": "迁移完成后，您将拥有 9 个 OPSX 命令，而非原来的 3 个：",
+      "updatedAt": "2026-02-23T04:30:10.247Z"
+    },
+    "title:Understanding the New Architecture": {
+      "original": "Understanding the New Architecture",
+      "translated": "理解新架构",
+      "updatedAt": "2026-02-23T04:30:11.885Z"
+    },
+    "desc:Understanding the New Architecture": {
+      "original": "The legacy workflow forced linear progression:",
+      "translated": "传统工作流强制线性推进：",
+      "updatedAt": "2026-02-23T04:30:13.522Z"
+    },
+    "title:Continuing Existing Changes": {
+      "original": "Continuing Existing Changes",
+      "translated": "继续现有变更",
+      "updatedAt": "2026-02-23T04:30:14.860Z"
+    },
+    "desc:Continuing Existing Changes": {
+      "original": "Your in-progress changes work seamlessly with OPSX commands.",
+      "translated": "您正在进行的更改可与 OPSX 命令无缝协作。",
+      "updatedAt": "2026-02-23T04:30:16.518Z"
+    },
+    "title:The New Config System": {
+      "original": "The New Config System",
+      "translated": "新配置系统",
+      "updatedAt": "2026-02-23T04:30:18.151Z"
+    },
+    "desc:The New Config System": {
+      "original": "When determining which schema to use, OPSX checks in order:",
+      "translated": "当确定使用哪个模式时，OPSX按顺序检查：",
+      "updatedAt": "2026-02-23T04:30:19.730Z"
+    },
+    "title:Troubleshooting": {
+      "original": "Troubleshooting",
+      "translated": "故障排除",
+      "updatedAt": "2026-02-23T04:30:21.200Z"
+    },
+    "desc:Troubleshooting": {
+      "original": "You're running in a CI or non-interactive environment. Use:",
+      "translated": "您正在 CI 或非交互式环境中运行。请使用：",
+      "updatedAt": "2026-02-23T04:30:22.870Z"
+    },
+    "title:Quick Reference": {
+      "original": "Quick Reference",
+      "translated": "快速参考",
+      "updatedAt": "2026-02-23T04:30:24.326Z"
+    },
+    "desc:Quick Reference": {
+      "original": "---",
+      "translated": "---",
+      "updatedAt": "2026-02-23T04:30:25.768Z"
+    }
+  },
+  "multiLanguage": {
+    "quickSetup": {
+      "original": "schema: spec-driven\n\ncontext: |\n  Language: Portuguese (pt-BR)\n  All artifacts must be written in Brazilian Portuguese.\n\n  # Your other project context below...\n  Tech stack: TypeScript, React, Node.js",
+      "translated": "schema: spec-driven\n\ncontext: |\n  Language: Portuguese (pt-BR)\n  All artifacts must be written in Brazilian Portuguese.\n\n  # Your other project context below...\n  Tech stack: TypeScript, React, Node.js",
+      "updatedAt": "2026-02-23T04:30:28.010Z"
+    },
+    "lang:Portuguese (Brazil)": {
+      "original": "Portuguese (Brazil)",
+      "translated": "葡萄牙语（巴西）",
+      "updatedAt": "2026-02-23T04:30:29.381Z"
+    },
+    "snippet:Portuguese (Brazil)": {
+      "original": "context: |\n  Language: Portuguese (pt-BR)\n  All artifacts must be written in Brazilian Portuguese.",
+      "translated": "多语言配置示例：\n\ncontext: |\n  Language: Portuguese (pt-BR)\n  All artifacts must be written in Brazilian Portuguese.",
+      "updatedAt": "2026-02-23T04:30:31.062Z"
+    },
+    "lang:Spanish": {
+      "original": "Spanish",
+      "translated": "西班牙语",
+      "updatedAt": "2026-02-23T04:30:32.641Z"
+    },
+    "snippet:Spanish": {
+      "original": "context: |\n  Idioma: Español\n  Todos los artefactos deben escribirse en español.",
+      "translated": "context: |\n  语言：西班牙语\n  所有制品都必须用西班牙语书写。",
+      "updatedAt": "2026-02-23T04:30:34.580Z"
+    },
+    "lang:Chinese (Simplified)": {
+      "original": "Chinese (Simplified)",
+      "translated": "中文（简体）",
+      "updatedAt": "2026-02-23T04:30:36.035Z"
+    },
+    "snippet:Chinese (Simplified)": {
+      "original": "context: |\n  语言：中文（简体）\n  所有产出物必须用简体中文撰写。",
+      "translated": "context: |\n  语言：中文（简体）\n  所有产出物必须用简体中文撰写。",
+      "updatedAt": "2026-02-23T04:30:37.585Z"
+    },
+    "lang:Japanese": {
+      "original": "Japanese",
+      "translated": "日语",
+      "updatedAt": "2026-02-23T04:30:38.892Z"
+    },
+    "snippet:Japanese": {
+      "original": "context: |\n  言語：日本語\n  すべての成果物は日本語で作成してください。",
+      "translated": "context: |\n  语言：日语\n  所有成果物请用日语制作。",
+      "updatedAt": "2026-02-23T04:30:40.279Z"
+    },
+    "lang:French": {
+      "original": "French",
+      "translated": "法语",
+      "updatedAt": "2026-02-23T04:30:41.445Z"
+    },
+    "snippet:French": {
+      "original": "context: |\n  Langue : Français\n  Tous les artefacts doivent être rédigés en français.",
+      "translated": "context: |\n  语言：法语\n  所有工件必须用法语编写。",
+      "updatedAt": "2026-02-23T04:30:43.033Z"
+    },
+    "lang:German": {
+      "original": "German",
+      "translated": "德语",
+      "updatedAt": "2026-02-23T04:30:44.328Z"
+    },
+    "snippet:German": {
+      "original": "context: |\n  Sprache: Deutsch\n  Alle Artefakte müssen auf Deutsch verfasst werden.",
+      "translated": "context: |\n  语言：德语\n  所有工件必须用德语编写。",
+      "updatedAt": "2026-02-23T04:30:46.034Z"
+    },
+    "tip:Handle Technical Terms：Decide how to handle technical terminology:": {
+      "original": "Handle Technical Terms：Decide how to handle technical terminology:",
+      "translated": "多语言最佳实践：\n\n处理技术术语：确定如何处理技术术语：",
+      "updatedAt": "2026-02-23T04:30:47.423Z"
+    },
+    "tip:Combine with Other Context：Language settings work alongside your other project context:": {
+      "original": "Combine with Other Context：Language settings work alongside your other project context:",
+      "translated": "多语言最佳实践：\n\n与其他上下文结合：语言设置与您的其他项目上下文协同工作：",
+      "updatedAt": "2026-02-23T04:30:49.122Z"
+    }
+  },
+  "workflows": {
+    "pattern-title:Quick Feature": {
+      "original": "Quick Feature",
+      "translated": "快速功能",
+      "updatedAt": "2026-02-23T04:30:50.427Z"
+    },
+    "pattern-desc:Quick Feature": {
+      "original": "When you know what you want to build and just need to execute:",
+      "translated": "当您明确构建目标并只需执行时：",
+      "updatedAt": "2026-02-23T04:30:51.935Z"
+    },
+    "pattern-bestfor:Quick Feature": {
+      "original": "Small to medium features, bug fixes, straightforward changes.",
+      "translated": "工作流适用场景：中小型功能开发、错误修复、简单变更。",
+      "updatedAt": "2026-02-23T04:30:53.502Z"
+    },
+    "pattern-title:Exploratory": {
+      "original": "Exploratory",
+      "translated": "探索式工作流",
+      "updatedAt": "2026-02-23T04:30:54.877Z"
+    },
+    "pattern-desc:Exploratory": {
+      "original": "When requirements are unclear or you need to investigate first:",
+      "translated": "当需求不明确或需要先进行调研时：",
+      "updatedAt": "2026-02-23T04:30:56.375Z"
+    },
+    "pattern-bestfor:Exploratory": {
+      "original": "Performance optimization, debugging, architectural decisions, unclear requirements.",
+      "translated": "工作流适用场景：\n性能优化、调试、架构决策、需求不明确。",
+      "updatedAt": "2026-02-23T04:30:57.985Z"
+    },
+    "pattern-title:Parallel Changes": {
+      "original": "Parallel Changes",
+      "translated": "并行变更",
+      "updatedAt": "2026-02-23T04:30:59.364Z"
+    },
+    "pattern-desc:Parallel Changes": {
+      "original": "Work on multiple changes at once:",
+      "translated": "同时处理多项变更：",
+      "updatedAt": "2026-02-23T04:31:00.970Z"
+    },
+    "pattern-bestfor:Parallel Changes": {
+      "original": "Parallel work streams, urgent interrupts, team collaboration.",
+      "translated": "工作流适用场景：并行工作流、紧急中断处理、团队协作。",
+      "updatedAt": "2026-02-23T04:31:02.707Z"
+    },
+    "pattern-title:Completing a Change": {
+      "original": "Completing a Change",
+      "translated": "完成变更",
+      "updatedAt": "2026-02-23T04:31:04.506Z"
+    },
+    "pattern-desc:Completing a Change": {
+      "original": "The recommended completion flow:",
+      "translated": "推荐的工作流模式：",
+      "updatedAt": "2026-02-23T04:31:05.842Z"
+    },
+    "best:Keep Changes Focused：One logical unit of work per change. If you're doing \"add feature X and also refactor Y\", consider two separate changes.": {
+      "original": "Keep Changes Focused：One logical unit of work per change. If you're doing \"add feature X and also refactor Y\", consider two separate changes.",
+      "translated": "工作流最佳实践：\n\n保持变更聚焦：每次变更只包含一个逻辑工作单元。如果你需要\"添加功能X并重构Y\"，请考虑分成两次独立的变更。",
+      "updatedAt": "2026-02-23T04:31:07.849Z"
+    },
+    "best:Use /opsx:explore for Unclear Requirements：Before committing to a change, explore the problem space:": {
+      "original": "Use /opsx:explore for Unclear Requirements：Before committing to a change, explore the problem space:",
+      "translated": "工作流最佳实践：\n\n需求不明确时使用 /opsx:explore：在确定变更前，先探索问题空间：",
+      "updatedAt": "2026-02-23T04:31:09.700Z"
+    },
+    "best:Verify Before Archiving：Use /opsx:verify to check implementation matches artifacts:": {
+      "original": "Verify Before Archiving：Use /opsx:verify to check implementation matches artifacts:",
+      "translated": "工作流最佳实践：\n\n归档前验证：使用 /opsx:verify 命令检查实现是否与制品匹配。",
+      "updatedAt": "2026-02-23T04:31:11.363Z"
+    },
+    "best:Name Changes Clearly：Good names make openspec list useful:": {
+      "original": "Name Changes Clearly：Good names make openspec list useful:",
+      "translated": "工作流最佳实践：\n\n命名清晰明确：好的命名能让 openspec 列表更有用：",
+      "updatedAt": "2026-02-23T04:31:13.001Z"
+    }
+  },
+  "opsx": {
+    "title:What Is It?": {
+      "original": "What Is It?",
+      "translated": "这是什么？",
+      "updatedAt": "2026-02-23T04:31:14.320Z"
+    },
+    "desc:What Is It?": {
+      "original": "OPSX is now the standard workflow for OpenSpec.",
+      "translated": "OPSX 现已成为 OpenSpec 的标准工作流程。",
+      "updatedAt": "2026-02-23T04:31:15.845Z"
+    },
+    "title:Why This Exists": {
+      "original": "Why This Exists",
+      "translated": "为何存在",
+      "updatedAt": "2026-02-23T04:31:17.608Z"
+    },
+    "desc:Why This Exists": {
+      "original": "The legacy OpenSpec workflow works, but it's locked down:",
+      "translated": "传统 OpenSpec 工作流虽然可用，但存在限制：",
+      "updatedAt": "2026-02-23T04:31:19.628Z"
+    },
+    "title:The User Experience": {
+      "original": "The User Experience",
+      "translated": "用户体验",
+      "updatedAt": "2026-02-23T04:31:21.097Z"
+    },
+    "desc:The User Experience": {
+      "original": "The problem with linear workflows: You're \"in planning phase\", then \"in implementation phase\", then \"done\". But real work doesn't work that way. You implement something, realize your design was wrong, need to update specs, continue implementing. Linear phases fight against how work actually happens.",
+      "translated": "线性工作流程的问题：你先是\"处于规划阶段\"，然后\"处于实施阶段\"，最后\"完成\"。但实际工作并非如此运作。你实现某个功能后，发现设计存在错误，需要更新规范，然后继续实施。线性阶段与实际工作的发生方式相悖。",
+      "updatedAt": "2026-02-23T04:31:23.472Z"
+    },
+    "title:Setup": {
+      "original": "Setup",
+      "translated": "安装",
+      "updatedAt": "2026-02-23T04:31:25.032Z"
+    },
+    "desc:Setup": {
+      "original": "This creates skills in .claude/skills/ (or equivalent) that AI coding assistants auto-detect.",
+      "translated": "这会在 .claude/skills/（或等效目录）中创建技能，供 AI 编程助手自动检测。",
+      "updatedAt": "2026-02-23T04:31:26.774Z"
+    },
+    "title:Project Configuration": {
+      "original": "Project Configuration",
+      "translated": "项目配置",
+      "updatedAt": "2026-02-23T04:31:28.026Z"
+    },
+    "desc:Project Configuration": {
+      "original": "Project config lets you set defaults and inject project-specific context into all artifacts.",
+      "translated": "项目配置允许您设置默认值，并将项目特定的上下文注入所有工件中。",
+      "updatedAt": "2026-02-23T04:31:29.945Z"
+    },
+    "title:Commands": {
+      "original": "Commands",
+      "translated": "命令",
+      "updatedAt": "2026-02-23T04:31:31.416Z"
+    },
+    "title:Usage": {
+      "original": "Usage",
+      "translated": "用法",
+      "updatedAt": "2026-02-23T04:31:32.700Z"
+    },
+    "desc:Usage": {
+      "original": "Think through ideas, investigate problems, compare options. No structure required - just a thinking partner. When insights crystallize, transition to /opsx:new or /opsx:ff.",
+      "translated": "思考想法、研究问题、比较方案。无需固定结构——只需一个思考伙伴。当思路清晰时，可转向 /opsx:new 或 /opsx:ff。",
+      "updatedAt": "2026-02-23T04:31:34.534Z"
+    },
+    "title:When to Update vs. Start Fresh": {
+      "original": "When to Update vs. Start Fresh",
+      "translated": "何时更新与何时重新开始",
+      "updatedAt": "2026-02-23T04:31:35.931Z"
+    },
+    "desc:When to Update vs. Start Fresh": {
+      "original": "You can always edit your proposal or specs before implementation. But when does refining become \"this is different work\"?",
+      "translated": "在实施前，您可以随时编辑您的提案或规格说明。但何时调整会变成\"这是不同的工作\"呢？",
+      "updatedAt": "2026-02-23T04:31:37.626Z"
+    },
+    "title:What's Different?": {
+      "original": "What's Different?",
+      "translated": "有何不同？",
+      "updatedAt": "2026-02-23T04:31:39.031Z"
+    },
+    "desc:What's Different?": {
+      "original": "The key insight: work isn't linear. OPSX stops pretending it is.",
+      "translated": "核心洞察：工作并非线性。OPSX 不再假装它是。",
+      "updatedAt": "2026-02-23T04:31:40.590Z"
+    },
+    "title:Architecture Deep Dive": {
+      "original": "Architecture Deep Dive",
+      "translated": "架构深度解析",
+      "updatedAt": "2026-02-23T04:31:41.955Z"
+    },
+    "desc:Architecture Deep Dive": {
+      "original": "This section explains how OPSX works under the hood and how it compares to the legacy workflow.",
+      "translated": "本节将深入解析 OPSX 的底层工作原理，并将其与旧版工作流进行对比。",
+      "updatedAt": "2026-02-23T04:31:43.630Z"
+    },
+    "title:Schemas": {
+      "original": "Schemas",
+      "translated": "架构",
+      "updatedAt": "2026-02-23T04:31:45.100Z"
+    },
+    "desc:Schemas": {
+      "original": "Schemas define what artifacts exist and their dependencies. Currently available:",
+      "translated": "架构定义定义了存在的工件及其依赖关系。当前可用的有：",
+      "updatedAt": "2026-02-23T04:31:46.611Z"
+    },
+    "title:Tips": {
+      "original": "Tips",
+      "translated": "提示",
+      "updatedAt": "2026-02-23T04:31:47.907Z"
+    },
+    "title:Feedback": {
+      "original": "Feedback",
+      "translated": "反馈",
+      "updatedAt": "2026-02-23T04:31:49.273Z"
+    },
+    "desc:Feedback": {
+      "original": "This is rough. That's intentional — we're learning what works.",
+      "translated": "这只是一个初步版本。我们有意保持这种粗糙状态——我们正在探索什么方案可行。",
+      "updatedAt": "2026-02-23T04:31:50.869Z"
+    },
+    "compare:Structure:legacy": {
+      "original": "One big proposal document",
+      "translated": "一份大型提案文档",
+      "updatedAt": "2026-02-23T04:31:52.309Z"
+    },
+    "compare:Structure:opsx": {
+      "original": "Discrete artifacts with dependencies",
+      "translated": "具有依赖关系的离散制品",
+      "updatedAt": "2026-02-23T04:31:53.697Z"
+    },
+    "compare:Workflow:legacy": {
+      "original": "Linear phases: plan → implement → archive",
+      "translated": "线性阶段：规划 → 实施 → 归档",
+      "updatedAt": "2026-02-23T04:31:55.081Z"
+    },
+    "compare:Workflow:opsx": {
+      "original": "Fluid actions — do anything anytime",
+      "translated": "流体操作——随时执行任何任务",
+      "updatedAt": "2026-02-23T04:31:56.467Z"
+    },
+    "compare:Iteration:legacy": {
+      "original": "Awkward to go back",
+      "translated": "返回操作不便",
+      "updatedAt": "2026-02-23T04:31:57.776Z"
+    },
+    "compare:Iteration:opsx": {
+      "original": "Update artifacts as you learn",
+      "translated": "随着学习更新制品",
+      "updatedAt": "2026-02-23T04:31:59.217Z"
+    },
+    "compare:Customization:legacy": {
+      "original": "Fixed structure",
+      "translated": "固定结构",
+      "updatedAt": "2026-02-23T04:32:00.498Z"
+    },
+    "compare:Customization:opsx": {
+      "original": "Schema-driven (define your own artifacts)",
+      "translated": "Schema-driven (define your own artifacts)",
+      "updatedAt": "2026-02-23T04:32:01.912Z"
+    }
+  }
 }

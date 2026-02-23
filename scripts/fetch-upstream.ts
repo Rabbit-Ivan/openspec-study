@@ -10,6 +10,13 @@ const FILES_TO_FETCH = [
     'docs/supported-tools.md',
     'docs/workflows.md',
     'docs/opsx.md',
+    'docs/concepts.md',
+    'docs/getting-started.md',
+    'docs/installation.md',
+    'docs/cli.md',
+    'docs/customization.md',
+    'docs/migration-guide.md',
+    'docs/multi-language.md',
     'README.md',
 ]
 
@@ -89,7 +96,9 @@ export async function compareCommits(
         throw new Error(`Failed to compare commits: ${res.status}`)
     }
     const data = await res.json() as { files?: Array<{ filename: string }> }
-    const changedFiles = (data.files || []).map(file => file.filename)
+    const changedFiles = (data.files || [])
+        .map(file => file.filename)
+        .filter(file => file === 'README.md' || file.startsWith('docs/'))
     const trackedSet = new Set(trackedFiles)
     const trackedChanges = changedFiles.filter(file => trackedSet.has(file))
     const untrackedChanges = changedFiles.filter(file => !trackedSet.has(file))

@@ -52,6 +52,23 @@ function readJsonFile<T>(path: string, fallback: T): T {
     }
 }
 
+function createEmptyTranslations(): Translations {
+    return {
+        commands: {},
+        tools: {},
+        meta: {},
+        concepts: {},
+        gettingStarted: {},
+        installation: {},
+        cli: {},
+        customization: {},
+        migrationGuide: {},
+        multiLanguage: {},
+        workflows: {},
+        opsx: {},
+    }
+}
+
 function readPreviousCommitSha(existingUpstream: UpstreamData | null): string {
     if (existsSync(SHA_FILE)) {
         return readFileSync(SHA_FILE, 'utf-8').trim()
@@ -174,13 +191,21 @@ async function main() {
         untrackedChanges,
     })
     console.log(`  Commands: ${upstream.commands.length}`)
+    console.log(`  Legacy commands: ${upstream.legacyCommands.length}`)
+    console.log(`  Troubleshooting: ${upstream.troubleshooting.length}`)
     console.log(`  Tools: ${upstream.tools.length}`)
+    console.log(`  CLI commands: ${upstream.cli.length}`)
+    console.log(`  Concepts: ${upstream.concepts.length}`)
+    console.log(`  Getting started steps: ${upstream.gettingStarted.length}`)
+    console.log(`  Installation steps: ${upstream.installation.length}`)
+    console.log(`  Customization sections: ${upstream.customization.length}`)
+    console.log(`  Migration steps: ${upstream.migrationGuide.length}`)
     console.log(`  Tool syntax: ${upstream.toolSyntax.length}`)
 
     console.log('\n🌐 检查翻译...')
-    const existingTranslations: Translations = existsSync(TRANSLATIONS_FILE)
+    const existingTranslations: Partial<Translations> = existsSync(TRANSLATIONS_FILE)
         ? JSON.parse(readFileSync(TRANSLATIONS_FILE, 'utf-8'))
-        : { commands: {}, tools: {}, meta: {} }
+        : createEmptyTranslations()
     const translations = await computeTranslations(upstream, existingTranslations)
 
     console.log('\n💾 写入数据文件...')

@@ -1,9 +1,9 @@
 // Footer section renderer
 
 import { MANTRA } from '../data/custom'
-import type { UpstreamData } from '../types'
+import type { Translations, UpstreamData } from '../types'
 
-export function renderFooter(container: HTMLElement, upstream: UpstreamData) {
+export function renderFooter(container: HTMLElement, upstream: UpstreamData, _translations: Translations) {
     const toolCount = upstream.tools.length || 22
     const sync = upstream.sync
     const sourceSha = sync?.sourceCommitSha || upstream.commitSha
