@@ -230,14 +230,14 @@ export const REFERENCE_TABLE_HEADERS = {
 
 // Reference table usage scenario mapping
 export const COMMAND_USAGE_SCENARIOS: Record<string, string> = {
-    '/opsx:ff': 'new 后快速推进',
-    '/opsx:new': '需要逐步审核时',
-    '/opsx:continue': '配合 new 使用',
-    '/opsx:apply': '开始写代码',
+    '/opsx:explore': '需求不清楚，需要调研',
+    '/opsx:new': '开始任何新工作',
+    '/opsx:continue': '逐步生成产物（想每步审核）',
+    '/opsx:ff': '范围明确，准备开写',
+    '/opsx:apply': '准备写代码',
     '/opsx:verify': '归档前检查（推荐）',
-    '/opsx:archive': '收尾必用（会提示 sync）',
-    '/opsx:explore': '不确定要不要做时',
-    '/opsx:sync': 'archive 会自动提示',
-    '/opsx:bulk-archive': '并行开发收尾',
-    '/opsx:onboard': '新手入门首选',
+    '/opsx:sync': '需要把 delta specs 合并回主 specs',
+    '/opsx:archive': '完成后归档（可能提示 sync）',
+    '/opsx:bulk-archive': '多个变更一起归档',
+    '/opsx:onboard': '新手走一遍完整流程',
 }

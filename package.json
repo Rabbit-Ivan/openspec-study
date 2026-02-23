@@ -4,8 +4,8 @@
   "description": "OpenSpec 工作流中文指南 - 自动同步上游仓库",
   "type": "module",
   "scripts": {
-    "fetch": "tsx scripts/build-data.ts",
     "sync": "tsx scripts/build-data.ts",
+    "predev": "tsx scripts/build-data.ts",
     "dev": "vite",
     "prebuild": "tsx scripts/build-data.ts",
     "build": "vite build",

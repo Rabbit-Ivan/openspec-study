@@ -61,9 +61,9 @@ SYNC_ALERT_WEBHOOK=https://example.com/webhook
 
 ```bash
 # 拉取上游并更新 src/data/upstream.json、src/data/translations.json
-pnpm fetch
+pnpm run sync
 
-# 本地开发
+# 本地开发（会先执行 predev，即自动同步数据）
 pnpm dev
 
 # 生产构建（会先执行 prebuild，即自动同步数据）
@@ -162,4 +162,3 @@ pnpm preview
 - `tsx`
 - `openai`
 - `@types/node`
-
