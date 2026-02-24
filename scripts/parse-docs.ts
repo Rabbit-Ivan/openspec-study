@@ -237,16 +237,16 @@ function extractCommands(content: string): string[] {
 function parseQuickRef(content: string): Array<{ name: string; purpose: string }> {
     const quickRefSection = findSection(content, 2, /^Quick Reference$/i)
     if (!quickRefSection) return []
-    const table = extractTables(quickRefSection.body)[0]
-    if (!table) return []
-
     const result: Array<{ name: string; purpose: string }> = []
-    for (const row of table.slice(1)) {
-        if (row.length < 2) continue
-        result.push({
-            name: row[0],
-            purpose: row[1],
-        })
+    // Handle dual-table structure: collect entries from ALL tables in the section
+    for (const table of extractTables(quickRefSection.body)) {
+        for (const row of table.slice(1)) {
+            if (row.length < 2) continue
+            result.push({
+                name: row[0],
+                purpose: row[1],
+            })
+        }
     }
     return result
 }
@@ -350,15 +350,20 @@ function parseTools(content: string): { tools: Tool[]; skills: Skill[] } {
         }
     }
 
-    const skillsSection = findSection(content, 2, /^What Gets Installed$/i)
-    const skillsTable = skillsSection ? extractTables(skillsSection.body)[0] : null
-    if (skillsTable) {
-        for (const row of skillsTable.slice(1)) {
-            if (row.length < 2) continue
-            skills.push({
-                name: row[0],
-                purpose: row[1],
-            })
+    // Section renamed from 'What Gets Installed' to 'Generated Skill Names'; format changed from table to bullet list
+    const skillsSection = findSection(content, 2, /^Generated Skill Names$/i)
+    if (skillsSection) {
+        for (const line of skillsSection.body.split('\n')) {
+            const trimmed = line.trim()
+            if (!/^[-*]\s+/.test(trimmed)) continue
+            // Parse: - **name** — description or - **name** (SKILL.md) — description
+            const nameMatch = trimmed.match(/^[-*]\s+\*\*([^*]+)\*\*/)
+            if (!nameMatch) continue
+            const name = nameMatch[1].trim()
+            const afterName = trimmed.slice(nameMatch[0].length).trim()
+            // Strip parenthetical notes like (SKILL.md) and leading dash/em-dash
+            const purpose = afterName.replace(/^\([^)]+\)\s*/, '').replace(/^[-—]\s*/, '').trim()
+            skills.push({ name, purpose })
         }
     }
 
@@ -385,7 +390,7 @@ function parseMeta(readme: string, installation: string, toolCount: number): Met
 
 function parseWorkflows(content: string): Workflows {
     const philosophySection = findSection(content, 2, /^Philosophy:/i)
-    const patternsSection = findSection(content, 2, /^Workflow Patterns$/i)
+    const patternsSection = findSection(content, 2, /^Workflow Patterns/i)
     const ffVsContinueSection = findSection(content, 3, /\/opsx:ff.*\/opsx:continue/i)
     const updateVsNewSection = findSection(content, 3, /^When to Update vs Start Fresh$/i)
     const bestPracticesSection = findSection(content, 2, /^Best Practices$/i)
