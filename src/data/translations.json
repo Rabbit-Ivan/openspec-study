@@ -2,8 +2,8 @@
   "commands": {
     "/opsx:new": {
       "chineseName": "新",
-      "description": "开始一个新的变更",
-      "source": "Start a new change"
+      "description": "开始一个新的变更脚手架",
+      "source": "Start a new change scaffold"
     },
     "/opsx:continue": {
       "chineseName": "续",
@@ -49,6 +49,11 @@
       "chineseName": "学",
       "description": "完整工作流程的引导式教程",
       "source": "Guided tutorial through the complete workflow"
+    },
+    "/opsx:propose": {
+      "chineseName": "propose",
+      "description": "创建变更并一步生成规划工件",
+      "source": "Create a change and generate planning artifacts in one step"
     }
   },
   "tools": {
@@ -171,6 +176,126 @@
       "original": "Windsurf",
       "translated": "Windsurf",
       "updatedAt": "2026-02-23T04:26:20.306Z"
+    },
+    "Amazon Q Developer (amazon-q)": {
+      "original": "Amazon Q Developer (amazon-q)",
+      "translated": "Amazon Q Developer (amazon-q)",
+      "updatedAt": "2026-02-24T17:08:43.785Z"
+    },
+    "Antigravity (antigravity)": {
+      "original": "Antigravity (antigravity)",
+      "translated": "Antigravity (antigravity)",
+      "updatedAt": "2026-02-24T17:08:45.016Z"
+    },
+    "Auggie (auggie)": {
+      "original": "Auggie (auggie)",
+      "translated": "Auggie (auggie)",
+      "updatedAt": "2026-02-24T17:08:46.428Z"
+    },
+    "Claude Code (claude)": {
+      "original": "Claude Code (claude)",
+      "translated": "Claude Code (claude)",
+      "updatedAt": "2026-02-24T17:08:47.412Z"
+    },
+    "Cline (cline)": {
+      "original": "Cline (cline)",
+      "translated": "Cline (cline)",
+      "updatedAt": "2026-02-24T17:08:48.613Z"
+    },
+    "CodeBuddy (codebuddy)": {
+      "original": "CodeBuddy (codebuddy)",
+      "translated": "CodeBuddy (codebuddy)",
+      "updatedAt": "2026-02-24T17:08:49.808Z"
+    },
+    "Codex (codex)": {
+      "original": "Codex (codex)",
+      "translated": "Codex (codex)",
+      "updatedAt": "2026-02-24T17:08:51.307Z"
+    },
+    "Continue (continue)": {
+      "original": "Continue (continue)",
+      "translated": "继续（Continue）",
+      "updatedAt": "2026-02-24T17:08:52.620Z"
+    },
+    "CoStrict (costrict)": {
+      "original": "CoStrict (costrict)",
+      "translated": "CoStrict (costrict)",
+      "updatedAt": "2026-02-24T17:08:53.918Z"
+    },
+    "Crush (crush)": {
+      "original": "Crush (crush)",
+      "translated": "Crush (crush)",
+      "updatedAt": "2026-02-24T17:08:55.229Z"
+    },
+    "Cursor (cursor)": {
+      "original": "Cursor (cursor)",
+      "translated": "Cursor (cursor)",
+      "updatedAt": "2026-02-24T17:08:56.155Z"
+    },
+    "Factory Droid (factory)": {
+      "original": "Factory Droid (factory)",
+      "translated": "Factory Droid (factory)",
+      "updatedAt": "2026-02-24T17:08:57.395Z"
+    },
+    "Gemini CLI (gemini)": {
+      "original": "Gemini CLI (gemini)",
+      "translated": "Gemini CLI (gemini)",
+      "updatedAt": "2026-02-24T17:08:59.069Z"
+    },
+    "GitHub Copilot (github-copilot)": {
+      "original": "GitHub Copilot (github-copilot)",
+      "translated": "GitHub Copilot (github-copilot)",
+      "updatedAt": "2026-02-24T17:09:00.694Z"
+    },
+    "iFlow (iflow)": {
+      "original": "iFlow (iflow)",
+      "translated": "iFlow (iflow)",
+      "updatedAt": "2026-02-24T17:09:02.399Z"
+    },
+    "Kilo Code (kilocode)": {
+      "original": "Kilo Code (kilocode)",
+      "translated": "Kilo Code (kilocode)",
+      "updatedAt": "2026-02-24T17:09:03.902Z"
+    },
+    "Kiro (kiro)": {
+      "original": "Kiro (kiro)",
+      "translated": "Kiro (kiro)",
+      "updatedAt": "2026-02-24T17:09:05.540Z"
+    },
+    "OpenCode (opencode)": {
+      "original": "OpenCode (opencode)",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nOpenCode (opencode)",
+      "updatedAt": "2026-02-24T17:09:07.150Z"
+    },
+    "Pi (pi)": {
+      "original": "Pi (pi)",
+      "translated": "Pi (pi)",
+      "updatedAt": "2026-02-24T17:09:08.597Z"
+    },
+    "Qoder (qoder)": {
+      "original": "Qoder (qoder)",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nQoder (qoder)",
+      "updatedAt": "2026-02-24T17:09:10.194Z"
+    },
+    "Qwen Code (qwen)": {
+      "original": "Qwen Code (qwen)",
+      "translated": "请翻译以下 AI 编码工具名称：\n\nQwen Code (qwen)",
+      "updatedAt": "2026-02-24T17:09:11.996Z"
+    },
+    "RooCode (roocode)": {
+      "original": "RooCode (roocode)",
+      "translated": "RooCode (roocode)",
+      "updatedAt": "2026-02-24T17:09:13.254Z"
+    },
+    "Trae (trae)": {
+      "original": "Trae (trae)",
+      "translated": "Trae (trae)",
+      "updatedAt": "2026-02-24T17:09:14.747Z"
+    },
+    "Windsurf (windsurf)": {
+      "original": "Windsurf (windsurf)",
+      "translated": "Windsurf (windsurf)",
+      "updatedAt": "2026-02-24T17:09:15.882Z"
     }
   },
   "meta": {
@@ -514,9 +639,9 @@
       "updatedAt": "2026-02-23T04:27:58.425Z"
     },
     "desc:How It Works": {
-      "original": "OpenSpec helps you and your AI coding assistant agree on what to build before any code is written. The workflow follows a simple pattern:",
-      "translated": "OpenSpec 帮助您和您的 AI 编程助手在编写任何代码之前就构建内容达成一致。工作流程遵循一个简单的模式：",
-      "updatedAt": "2026-02-23T04:28:00.223Z"
+      "original": "OpenSpec helps you and your AI coding assistant agree on what to build before any code is written.",
+      "translated": "OpenSpec 帮助您和您的 AI 编程助手在编写任何代码之前就构建内容达成一致。",
+      "updatedAt": "2026-02-24T17:09:17.421Z"
     },
     "title:What OpenSpec Creates": {
       "original": "What OpenSpec Creates",
@@ -582,6 +707,26 @@
       "original": "Use the CLI to check on your changes:",
       "translated": "使用 CLI 检查您的更改：",
       "updatedAt": "2026-02-23T04:28:19.154Z"
+    },
+    "title:1. Start the Change (Default)": {
+      "original": "1. Start the Change (Default)",
+      "translated": "1. 启动变更（默认）",
+      "updatedAt": "2026-02-24T17:09:18.795Z"
+    },
+    "desc:1. Start the Change (Default)": {
+      "original": "If you've enabled the expanded workflow profile, you can also do this as two steps: /opsx:new then /opsx:ff (or /opsx:continue incrementally).",
+      "translated": "如果您已启用扩展工作流配置文件，也可以分两步操作：先执行 /opsx:new，再执行 /opsx:ff（或逐步执行 /opsx:continue）。",
+      "updatedAt": "2026-02-24T17:09:20.986Z"
+    },
+    "title:2. What Gets Created": {
+      "original": "2. What Gets Created",
+      "translated": "2. 创建内容概览",
+      "updatedAt": "2026-02-24T17:09:22.640Z"
+    },
+    "desc:2. What Gets Created": {
+      "original": "proposal.md - Captures the intent:",
+      "translated": "proposal.md - 捕获意图：",
+      "updatedAt": "2026-02-24T17:09:24.036Z"
     }
   },
   "installation": {
@@ -673,9 +818,9 @@
       "updatedAt": "2026-02-23T04:28:43.129Z"
     },
     "desc:openspec update": {
-      "original": "Update OpenSpec instruction files after upgrading the CLI. Re-generates AI tool configuration files.",
-      "translated": "更新 CLI 后，更新 OpenSpec 指令文件。重新生成 AI 工具配置文件。",
-      "updatedAt": "2026-02-23T04:28:44.870Z"
+      "original": "Update OpenSpec instruction files after upgrading the CLI. Re-generates AI tool configuration files using your current global profile, selected workflows, and delivery mode.",
+      "translated": "更新 CLI 后，更新 OpenSpec 指令文件。使用您当前的全局配置文件、已选择的工作流和交付模式，重新生成 AI 工具配置文件。",
+      "updatedAt": "2026-02-24T17:09:26.119Z"
     },
     "name:openspec list": {
       "original": "openspec list",
@@ -957,9 +1102,9 @@
       "updatedAt": "2026-02-23T04:30:08.670Z"
     },
     "desc:The New Commands": {
-      "original": "After migration, you have 9 OPSX commands instead of 3:",
-      "translated": "迁移完成后，您将拥有 9 个 OPSX 命令，而非原来的 3 个：",
-      "updatedAt": "2026-02-23T04:30:10.247Z"
+      "original": "Command availability is profile-dependent:",
+      "translated": "命令可用性取决于配置文件：",
+      "updatedAt": "2026-02-24T17:09:27.782Z"
     },
     "title:Understanding the New Architecture": {
       "original": "Understanding the New Architecture",
@@ -1228,9 +1373,9 @@
       "updatedAt": "2026-02-23T04:31:32.700Z"
     },
     "desc:Usage": {
-      "original": "Think through ideas, investigate problems, compare options. No structure required - just a thinking partner. When insights crystallize, transition to /opsx:new or /opsx:ff.",
-      "translated": "思考想法、研究问题、比较方案。无需固定结构——只需一个思考伙伴。当思路清晰时，可转向 /opsx:new 或 /opsx:ff。",
-      "updatedAt": "2026-02-23T04:31:34.534Z"
+      "original": "Think through ideas, investigate problems, compare options. No structure required - just a thinking partner. When insights crystallize, transition to /opsx:propose (default) or /opsx:new//opsx:ff (expanded).",
+      "translated": "思考想法、调查问题、比较选项。无需结构——只需一个思考伙伴。当见解明确时，可转为 /opsx:propose（默认）或 /opsx:new//opsx:ff（扩展）。",
+      "updatedAt": "2026-02-24T17:09:29.718Z"
     },
     "title:When to Update vs. Start Fresh": {
       "original": "When to Update vs. Start Fresh",
@@ -1258,9 +1403,9 @@
       "updatedAt": "2026-02-23T04:31:41.955Z"
     },
     "desc:Architecture Deep Dive": {
-      "original": "This section explains how OPSX works under the hood and how it compares to the legacy workflow.",
-      "translated": "本节将深入解析 OPSX 的底层工作原理，并将其与旧版工作流进行对比。",
-      "updatedAt": "2026-02-23T04:31:43.630Z"
+      "original": "This section explains how OPSX works under the hood and how it compares to the legacy workflow. Examples in this section use the expanded command set (new, continue, etc.); default core users can map the same flow to propose → apply → archive.",
+      "translated": "本节将深入解析 OPSX 的底层运作机制，并与传统工作流进行对比。本部分的示例使用了扩展命令集（如 /opsx:new、/opsx:continue 等）；默认核心用户可将相同流程映射为 propose → apply → archive 操作。",
+      "updatedAt": "2026-02-24T17:09:32.464Z"
     },
     "title:Schemas": {
       "original": "Schemas",

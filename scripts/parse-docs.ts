@@ -356,8 +356,10 @@ function parseTools(content: string): { tools: Tool[]; skills: Skill[] } {
         for (const line of skillsSection.body.split('\n')) {
             const trimmed = line.trim()
             if (!/^[-*]\s+/.test(trimmed)) continue
-            // Parse: - **name** — description or - **name** (SKILL.md) — description
-            const nameMatch = trimmed.match(/^[-*]\s+\*\*([^*]+)\*\*/)
+            // Parse: - `name` or - **name** — description or - **name** (SKILL.md) — description
+            const backtickMatch = trimmed.match(/^[-*]\s+`([^`]+)`/)
+            const boldMatch = trimmed.match(/^[-*]\s+\*\*([^*]+)\*\*/)
+            const nameMatch = backtickMatch || boldMatch
             if (!nameMatch) continue
             const name = nameMatch[1].trim()
             const afterName = trimmed.slice(nameMatch[0].length).trim()
