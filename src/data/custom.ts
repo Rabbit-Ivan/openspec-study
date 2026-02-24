@@ -1,8 +1,8 @@
 // Custom Chinese content that stays fixed regardless of upstream changes
 
 export const MANTRA = {
-    characters: ['新', '续', '用', '档'],
-    english: ['new', 'continue', 'apply', 'archive'],
+    characters: ['提', '探', '用', '档'],
+    english: ['propose', 'explore', 'apply', 'archive'],
     colors: ['jade', 'gold', 'vermilion', 'jade'],
 }
 
@@ -15,26 +15,18 @@ export const HERO = {
 
 export const WORKFLOW_DEMOS = {
     fast: {
-        title: '⚡ 快速模式',
-        description: '官方推荐链路：<strong style="color: var(--jade-glow);">new → ff → apply → verify → archive</strong>',
+        title: '⚡ 核心模式',
+        description: '最简链路：<strong style="color: var(--jade-glow);">propose → apply → archive</strong>',
         lines: [
-            { type: 'comment', text: '# 第一步：创建变更' },
-            { type: 'input', text: '/opsx:new add-product-favorites' },
-            { type: 'success', text: '✓ 已创建 openspec/changes/add-product-favorites/' },
-            { type: 'blank' },
-            { type: 'comment', text: '# 第二步：快进生成规划文档' },
-            { type: 'input', text: '/opsx:ff' },
+            { type: 'comment', text: '# 第一步：提出变更（自动生成实现方案）' },
+            { type: 'input', text: '/opsx:propose add-product-favorites' },
             { type: 'success', text: '✓ 已生成 proposal.md, specs/, design.md, tasks.md' },
             { type: 'blank' },
-            { type: 'comment', text: '# 第三步：执行任务' },
+            { type: 'comment', text: '# 第二步：执行任务' },
             { type: 'input', text: '/opsx:apply' },
             { type: 'success', text: '✓ 开始执行 tasks.md 中的任务...' },
             { type: 'blank' },
-            { type: 'comment', text: '# 第四步：验证实现与规格一致' },
-            { type: 'input', text: '/opsx:verify' },
-            { type: 'success', text: '✓ 验证完成：0 critical，1 warning' },
-            { type: 'blank' },
-            { type: 'comment', text: '# 第五步：归档（如有需要会提示 sync）' },
+            { type: 'comment', text: '# 第三步：归档（如有需要会提示 sync）' },
             { type: 'input', text: '/opsx:archive' },
             { type: 'success', text: '✓ 已同步 specs 并归档到 archive/' },
         ],
@@ -106,12 +98,12 @@ export const SCENARIO = {
     subtitle: '用户可以收藏喜欢的珠宝产品，在个人中心查看',
     steps: [
         {
-            command: '/opsx:new',
-            desc: '先创建变更并命名，进入标准工作流',
+            command: '/opsx:propose',
+            desc: '提出新变更，自动生成实现方案（合并 new + ff 为一步）',
             results: [
                 '✓ 已创建 openspec/changes/product-favorites/',
-                '✓ 选择 schema：spec-driven',
-                '✓ 下一步可用：/opsx:continue 或 /opsx:ff',
+                '✓ 已生成 proposal.md、specs/、design.md、tasks.md',
+                '✓ 变更已就绪，可直接执行 /opsx:apply',
             ],
         },
         {
@@ -190,6 +182,7 @@ export const COMMAND_CATEGORY_MAP: Record<string, 'main' | 'speed' | 'auxiliary'
     '/opsx:sync': 'auxiliary',
     '/opsx:bulk-archive': 'auxiliary',
     '/opsx:onboard': 'auxiliary',
+    '/opsx:propose': 'main',
 }
 
 // Command Chinese name mapping (fallback if translation not available)
@@ -204,6 +197,7 @@ export const COMMAND_CHINESE_NAMES: Record<string, string> = {
     '/opsx:sync': '同',
     '/opsx:bulk-archive': '批档',
     '/opsx:onboard': '学',
+    '/opsx:propose': '提出变更',
 }
 
 // Command type labels
@@ -218,6 +212,7 @@ export const COMMAND_TYPE_LABELS: Record<string, string> = {
     '/opsx:sync': '同步',
     '/opsx:bulk-archive': '批量归档',
     '/opsx:onboard': '引导教程',
+    '/opsx:propose': '提出',
 }
 
 // Reference table columns
@@ -240,4 +235,5 @@ export const COMMAND_USAGE_SCENARIOS: Record<string, string> = {
     '/opsx:archive': '完成后归档（可能提示 sync）',
     '/opsx:bulk-archive': '多个变更一起归档',
     '/opsx:onboard': '新手走一遍完整流程',
+    '/opsx:propose': '提出新变更，自动合并 /opsx:new 与 /opsx:ff 为一步操作',
 }
