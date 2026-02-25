@@ -1,0 +1,8 @@
+5:    english: ['propose', 'explore', 'apply', 'archive'],
+19:        description: '最简链路：<strong style="color: var(--jade-glow);">propose → apply → archive</strong>',
+22:            { type: 'input', text: '/opsx:propose add-product-favorites' },
+101:            command: '/opsx:propose',
+185:    '/opsx:propose': 'main',
+200:    '/opsx:propose': '提出变更',
+215:    '/opsx:propose': '提出',
+238:    '/opsx:propose': '提出新变更，自动合并 /opsx:new 与 /opsx:ff 为一步操作',

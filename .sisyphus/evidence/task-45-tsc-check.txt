@@ -1,0 +1,7 @@
+scripts/translate.ts(72,56): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(body: ChatCompletionCreateParamsNonStreaming, options?: RequestOptions | undefined): APIPromise<ChatCompletion>', gave the following error.
+    Object literal may only specify known properties, and 'timeout' does not exist in type 'ChatCompletionCreateParamsNonStreaming'.
+  Overload 2 of 3, '(body: ChatCompletionCreateParamsStreaming, options?: RequestOptions | undefined): APIPromise<Stream<ChatCompletionChunk>>', gave the following error.
+    Type 'false' is not assignable to type 'true'.
+  Overload 3 of 3, '(body: ChatCompletionCreateParamsBase, options?: RequestOptions | undefined): APIPromise<ChatCompletion | Stream<...>>', gave the following error.
+    Object literal may only specify known properties, and 'timeout' does not exist in type 'ChatCompletionCreateParamsBase'.

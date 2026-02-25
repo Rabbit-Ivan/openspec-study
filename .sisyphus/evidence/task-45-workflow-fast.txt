@@ -1,0 +1,21 @@
+    fast: {
+        title: '⚡ 核心模式',
+        description: '最简链路：<strong style="color: var(--jade-glow);">propose → apply → archive</strong>',
+        lines: [
+            { type: 'comment', text: '# 第一步：提出变更（自动生成实现方案）' },
+            { type: 'input', text: '/opsx:propose add-product-favorites' },
+            { type: 'success', text: '✓ 已生成 proposal.md, specs/, design.md, tasks.md' },
+            { type: 'blank' },
+            { type: 'comment', text: '# 第二步：执行任务' },
+            { type: 'input', text: '/opsx:apply' },
+            { type: 'success', text: '✓ 开始执行 tasks.md 中的任务...' },
+            { type: 'blank' },
+            { type: 'comment', text: '# 第三步：归档（如有需要会提示 sync）' },
+            { type: 'input', text: '/opsx:archive' },
+            { type: 'success', text: '✓ 已同步 specs 并归档到 archive/' },
+        ],
+    },
+    detailed: {
+        title: '🔍 精细模式',
+        description: '每一步都可以 <strong style="color: var(--gold-glow);">审核和调整</strong>，适合重要功能',
+        lines: [

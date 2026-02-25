@@ -1,0 +1,4 @@
+237:function parseQuickRef(content: string): Array<{ name: string; purpose: string }> {
+336:function parseTools(content: string): { tools: Tool[]; skills: Skill[] } {
+391:function parseWorkflows(content: string): Workflows {
+460:function parseWorkflowHighlights(workflows: Workflows): WorkflowHighlights {

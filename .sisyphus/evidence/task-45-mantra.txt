@@ -1,0 +1,6 @@
+export const MANTRA = {
+    characters: ['提', '探', '用', '档'],
+    english: ['propose', 'explore', 'apply', 'archive'],
+    colors: ['jade', 'gold', 'vermilion', 'jade'],
+}
+
