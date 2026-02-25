@@ -32,7 +32,7 @@
 
 ### 2.1 环境要求
 
-- Node.js 20+
+- Node.js 20.19.0+
 - pnpm（锁定 `pnpm@10.26.2`）
 
 ### 2.2 安装依赖
@@ -73,6 +73,13 @@ pnpm build
 pnpm preview
 ```
 
+### 2.5 自动同步与自动发布机制
+
+- 自动同步：`sync.yml` 每天 UTC 06:00（可手动触发）拉取 OpenSpec 上游文档并提交数据更新。
+- 自动发布：`deploy.yml` 在 `main` 分支有新提交时自动构建并发布 GitHub Pages。
+- 同步范围：`src/data/upstream.json` 与 `src/data/translations.json` 中的结构化内容会跟随上游更新。
+- 定制边界：`src/data/custom.ts` 中的固定中文文案、演示剧情与品牌化表达不会被上游直接覆盖。
+
 ---
 
 ## 3. 目录结构、页面路由、项目 API 接口
@@ -106,6 +113,7 @@ pnpm preview
 │   ├── translate.ts
 │   └── build-data.ts
 ├── .github/workflows/sync.yml
+├── .github/workflows/deploy.yml
 └── openspec/config.yaml
 ```
 
@@ -154,6 +162,7 @@ pnpm preview
 - 数据源：OpenSpec GitHub 文档。
 - 翻译：DeepSeek（通过 OpenAI SDK 兼容调用）。
 - 自动同步：GitHub Actions（`sync.yml` 每天 UTC 06:00 + 手动触发）。
+- 自动发布：GitHub Actions + GitHub Pages（`deploy.yml` 在 `main` 提交后自动发布）。
 
 ### 4.2 关键依赖
 
@@ -162,3 +171,10 @@ pnpm preview
 - `tsx`
 - `openai`
 - `@types/node`
+
+---
+
+## 5. 规则添加
+
+- 回答尽量用中文。
+- 如果没有显式要求，尽量不要写兼容代码。

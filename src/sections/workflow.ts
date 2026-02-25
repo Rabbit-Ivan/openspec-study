@@ -75,7 +75,8 @@ function renderFlowChips(title: string, commands: string[]): string {
 
 export function renderWorkflow(container: HTMLElement, upstream: UpstreamData, translations: Translations) {
     const modes = ['fast', 'detailed', 'parallel'] as const
-    const quickFeatureFlow = upstream.workflowHighlights.quickFeature.length
+    const coreFlow = ['/opsx:propose', '/opsx:apply', '/opsx:archive']
+    const expandedQuickFeatureFlow = upstream.workflowHighlights.quickFeature.length
         ? upstream.workflowHighlights.quickFeature
         : ['/opsx:new', '/opsx:ff', '/opsx:apply', '/opsx:verify', '/opsx:archive']
     const completionFlow = upstream.workflowHighlights.completion.length
@@ -86,9 +87,16 @@ export function renderWorkflow(container: HTMLElement, upstream: UpstreamData, t
     <div class="section-label">${SECTION_LABELS.workflow}</div>
     <h2 class="section-title">${SECTION_LABELS.workflowTitle}</h2>
     <p class="section-desc">${SECTION_LABELS.workflowDesc}</p>
-    <div style="margin: 1.2rem 0 1.6rem; padding: 1rem 1.2rem; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(243,156,18,0.2);">
-      <div style="font-size: 0.95rem; color: var(--gold-glow);">官方推荐链路（自动同步）</div>
-      ${renderFlowChips('Quick Feature', quickFeatureFlow)}
+    <div style="margin: 1.2rem 0 0.8rem; padding: 1rem 1.2rem; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(243,156,18,0.2);">
+      <div style="font-size: 0.95rem; color: var(--gold-glow);">默认核心流（core，官方默认）</div>
+      ${renderFlowChips('Default Quick Path', coreFlow)}
+    </div>
+    <div style="margin: 0 0 1.6rem; padding: 1rem 1.2rem; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(74,222,128,0.22);">
+      <div style="font-size: 0.95rem; color: var(--jade-glow);">进阶扩展流（可选）</div>
+      <div style="color: var(--text-secondary); font-size: 0.84rem; margin-top: 0.35rem;">
+        先运行 <code>openspec config profile</code>，再运行 <code>openspec update</code> 启用扩展命令。
+      </div>
+      ${renderFlowChips('Quick Feature (Expanded)', expandedQuickFeatureFlow)}
       ${renderFlowChips('Completing a Change', completionFlow)}
     </div>
 
@@ -100,9 +108,9 @@ export function renderWorkflow(container: HTMLElement, upstream: UpstreamData, t
       </div>
       <div class="flow-arrow">→</div>
       <div class="flow-step">
-        <div class="flow-icon">📝</div>
+        <div class="flow-icon">🔍</div>
         <div class="flow-chinese">${MANTRA.characters[1]}</div>
-        <div class="flow-label">continue/ff</div>
+        <div class="flow-label">${MANTRA.english[1]}</div>
       </div>
       <div class="flow-arrow">→</div>
       <div class="flow-step">
