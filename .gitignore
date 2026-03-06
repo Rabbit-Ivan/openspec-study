@@ -2,9 +2,6 @@ node_modules
 dist
 .DS_Store
 *.log
-.last-sha
-.sync-state.json
-src/data/upstream.json
 .env
 .env.local
 spec-docs/
